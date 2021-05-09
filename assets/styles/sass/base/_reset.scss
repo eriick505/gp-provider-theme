@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+:root {
+  font-size: 60%;
+}
+
+// BREAKPOINT TABLET
+@media (min-width: 768px) {
+  :root {
+    font-size: 69%;
+  }
+}
+
+// BREAKPOINT DESKTOP
+@media (min-width: 1025px) {
+  :root {
+    font-size: 62.5%;
+  }
+}
+
+* {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.5;
+}
+
+body,
+input,
+textarea,
+button {
+  font: 400 1.6rem "Roboto", sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.7rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+h4 {
+  font-size: 2.1rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+}
+
+h6 {
+  font-size: 1.7rem;
+}
+
+p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    max-height: 22rem;
+    opacity: 1;
+  }
+}

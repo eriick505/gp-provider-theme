@@ -1,0 +1,22 @@
+{
+  "liveSassCompile.settings.autoprefix": [],
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/assets/styles/css"
+    },
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "/assets/styles/css"
+    }
+  ],
+  "liveSassCompile.settings.generateMap": false,
+  "liveSassCompile.settings.excludeList": [
+    "**/assets/styles/sass/abstracts/*.scss",
+    "**/assets/styles/sass/base/*.scss",
+    "**/assets/styles/sass/components/*.scss",
+    "**/assets/styles/sass/layout/*.scss"
+  ]
+}

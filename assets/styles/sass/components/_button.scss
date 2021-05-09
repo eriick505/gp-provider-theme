@@ -1,0 +1,19 @@
+.btn {
+  border-radius: 1.4rem;
+  color: var(--white);
+  cursor: pointer;
+  display: inline-block;
+  padding: 1rem 3rem;
+  text-decoration: none;
+  transition: var(--transition2s);
+  text-align: center;
+}
+
+.btnOrangeGradient {
+  background: var(--orangeGradient);
+
+  &:hover {
+    transform: scale(0.95);
+    box-shadow: var(--shadow-light);
+  }
+}

@@ -1,0 +1,146 @@
+.services {
+  padding: 8rem 0;
+
+  @media (min-width: 768px) {
+    padding: 13rem 0;
+  }
+
+  .listServices {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+    margin: 6rem 0;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    li:nth-child(1) .box {
+      background-image: url("../../img/sections/bpo.jpg");
+    }
+
+    li:nth-child(2) .box {
+      background-image: url("../../img/sections/contact-center.jpg");
+    }
+
+    li:nth-child(3) .box {
+      background-image: url("../../img/sections/tic.jpg");
+    }
+
+    .box {
+      background-size: cover;
+      background-position: center;
+      background-color: var(--orange);
+      color: var(--white);
+      padding: 1.8rem;
+      display: flex;
+      flex-direction: column;
+      height: 30rem;
+      justify-content: flex-end;
+      transition: var(--transition2s);
+
+      @media (min-width: 1025px) {
+        padding: {
+          top: 2.4rem;
+          right: 2rem;
+          bottom: 2rem;
+          left: 2.4rem;
+        }
+      }
+
+      &:hover {
+        transform: translateY(-10px);
+        box-shadow: var(--shadow-light);
+      }
+
+      a {
+        text-decoration: none;
+        color: var(--white);
+        display: block;
+        margin-bottom: 0.6rem;
+      }
+
+      h5 {
+        font-size: 2.4rem;
+      }
+
+      p {
+        font-size: 1.6rem;
+        margin-bottom: 0;
+
+        @media (min-width: 1025px) {
+          font-size: 1.4rem;
+        }
+      }
+
+      .btnServices {
+        align-items: center;
+        display: flex;
+        font-weight: 700;
+        justify-content: space-between;
+        margin-top: 0.4rem;
+        max-width: 160px;
+        transition: var(--transition2s);
+
+        &:hover {
+          max-width: 138px;
+          color: var(--blue-400);
+        }
+      }
+    }
+  }
+
+  .whereWeOperate {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    h3 {
+      margin-bottom: 1.9rem;
+      svg {
+        margin-right: 1rem;
+      }
+    }
+
+    p {
+      font-size: 1.8rem;
+      line-height: 2.6rem;
+    }
+
+    .listLocation {
+      display: flex;
+      justify-content: flex-end;
+      gap: 2.2rem;
+      margin-top: 1.4rem;
+
+      @media (min-width: 1025px) {
+        gap: 4.2rem;
+        margin-top: 0;
+      }
+
+      li {
+        align-items: center;
+        background: var(--orangeGradient);
+        border-radius: 10px;
+        color: var(--white);
+        display: flex;
+        flex-direction: column;
+        font-size: 18px;
+        font-weight: 700;
+        padding: 1.4rem 2.6rem;
+        text-align: center;
+
+        @media (min-width: 1025px) {
+          padding: 1.4rem 4.6rem;
+        }
+
+        img {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}

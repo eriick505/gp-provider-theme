@@ -1,0 +1,95 @@
+.footer {
+  .navFooter {
+    background-color: #f3f3f3;
+    padding: 2rem 0;
+
+    @media (min-width: 1025px) {
+      padding: 4rem 0;
+    }
+
+    & > .container {
+      display: grid;
+      grid-template-columns: 1fr;
+
+      @media (min-width: 1025px) {
+        grid-template-columns: 30rem 1fr;
+      }
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2.5rem;
+      justify-content: center;
+
+      @media (min-width: 1025px) {
+        justify-content: flex-start;
+        margin-bottom: 0;
+      }
+    }
+
+    .menusFooter {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      text-align: center;
+
+      @media (min-width: 1025px) {
+        grid-template-columns: 21rem 21rem 1fr 1fr;
+        text-align: initial;
+      }
+
+      h5 {
+        color: var(--blue-700);
+        margin-bottom: 1.2rem;
+        font-weight: 800;
+      }
+
+      li:not(:last-child) {
+        margin-bottom: 0.8rem;
+      }
+
+      a {
+        color: var(--blue-700);
+        text-decoration: none;
+
+        &:hover {
+          color: var(--orange);
+        }
+      }
+
+      .no-title {
+        margin-top: 0;
+
+        @media (min-width: 1025px) {
+          margin-top: 3.5rem;
+        }
+      }
+    }
+  }
+
+  .subFooter {
+    background-color: #efefef;
+    padding: 1.4rem 0;
+
+    & > .container {
+      color: var(--dark-gray);
+      display: flex;
+      font-weight: 400;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+
+      @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      @media (max-width: 520px) {
+        span:first-child {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
