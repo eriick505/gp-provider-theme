@@ -77,7 +77,7 @@
       <section class="mainHeader">
         <div class="container">
           <a
-            href="<?php echo get_site_url(); ?>"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
             class="logo"
@@ -102,27 +102,27 @@
                 >
               </li>
               <li>
-                <a href="#" target="_blank"
+                <a href="#"
                   >Institucional</a
                 >
               </li>
               <li>
-                <a href="#" target="_blank"
+                <a href="#"
                   >Nossas Soluções</a
                 >
               </li>
               <li>
-                <a href="#" target="_blank"
+                <a href="#"
                   >Ferramentas</a
                 >
               </li>
               <li>
-                <a href="#" target="_blank"
+                <a href="#"
                   >Trabalhe Conosco</a
                 >
               </li>
               <li>
-                <a href="#" target="_blank"
+                <a href="#"
                   >Contato</a
                 >
               </li>
