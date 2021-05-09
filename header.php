@@ -95,7 +95,15 @@
             ></button>
 
             <ul data-js="navMenu">
-              <li>
+              <?php
+                $args = array(
+                  'menu' => 'principal',
+                  'theme_location' => 'menu-principal',
+                  'container' => false
+                );
+                wp_nav_menu($args);
+              ?>
+              <!-- <li>
                 <a
                   href="<?php echo get_site_url(); ?>"
                   >Página Inicial</a
@@ -125,7 +133,7 @@
                 <a href="#"
                   >Contato</a
                 >
-              </li>
+              </li> -->
             </ul>
           </nav>
         </div>

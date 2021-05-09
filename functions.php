@@ -14,4 +14,13 @@ function add_scripts_js() {
 }
 add_action('wp_enqueue_scripts', 'add_scripts_js');
 
+// Habilitar suporte Menus
+add_theme_support('menus');
+
+// Registrar Menu
+function register_my_menu() {
+  register_nav_menu('menu-principal',__( 'Menu Principal' ));
+}
+add_action( 'init', 'register_my_menu' );
+
 ?>
