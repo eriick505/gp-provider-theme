@@ -94,39 +94,15 @@
               class="mobileButton"
             ></button>
 
-            <ul data-js="navMenu">
-              <li>
-                <a
-                  href="<?php echo get_site_url(); ?>"
-                  >Página Inicial</a
-                >
-              </li>
-              <li>
-                <a href="#"
-                  >Institucional</a
-                >
-              </li>
-              <li>
-                <a href="#"
-                  >Nossas Soluções</a
-                >
-              </li>
-              <li>
-                <a href="#"
-                  >Ferramentas</a
-                >
-              </li>
-              <li>
-                <a href="#"
-                  >Trabalhe Conosco</a
-                >
-              </li>
-              <li>
-                <a href="#"
-                  >Contato</a
-                >
-              </li>
-            </ul>
+            <?php
+              $args = array(
+                'menu' => 'principal',
+                'theme_location' => 'menu-principal',
+                'container' => false,
+                'menu_id' => 'navMenu'
+              );
+              wp_nav_menu($args);
+            ?>
           </nav>
         </div>
       </section>
