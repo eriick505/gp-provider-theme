@@ -1,6 +1,6 @@
 // MENU MOBILE
 const buttonMenuMobileEl = document.querySelector('[data-js="menuMobile"]');
-const navMenuEl = document.querySelector('[data-js="navMenu"]');
+const navMenuEl = document.querySelector("#navMenu");
 
 if (buttonMenuMobileEl && navMenuEl) {
   buttonMenuMobileEl.addEventListener("click", () => {
