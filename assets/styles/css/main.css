@@ -1337,6 +1337,84 @@ main#app {
           transform: scale(0.9);
 }
 
+.pageInstitucional .row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 1025px) {
+  .pageInstitucional .row {
+    -ms-grid-columns: 59.5rem 1fr;
+        grid-template-columns: 59.5rem 1fr;
+  }
+}
+
+.pageInstitucional .content {
+  position: relative;
+}
+
+.pageInstitucional .content p {
+  font-size: 1.8rem;
+  max-width: 90%;
+}
+
+@media (min-width: 1025px) {
+  .pageInstitucional .content p {
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+  }
+}
+
+.pageInstitucional .content.text-right {
+  text-align: right;
+}
+
+.pageInstitucional .content::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 10%;
+  width: 1px;
+  height: 80%;
+  background-color: var(--white);
+}
+
+.pageInstitucional .title {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.pageInstitucional .title h3 {
+  font-size: 6.4rem;
+  font-weight: 700;
+}
+
+.pageInstitucional .localizacao {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: var(--orange);
+  height: 72rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--white);
+}
+
 .footer .navFooter {
   background-color: #f3f3f3;
   padding: 2rem 0;

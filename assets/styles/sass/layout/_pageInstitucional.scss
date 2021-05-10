@@ -1,0 +1,59 @@
+.pageInstitucional {
+  .row {
+    display: grid;
+    grid-template-columns: 1fr;
+    flex-direction: column;
+
+    @media (min-width: 1025px) {
+      grid-template-columns: 59.5rem 1fr;
+    }
+  }
+
+  .content {
+    position: relative;
+
+    p {
+      font-size: 1.8rem;
+      max-width: 90%;
+
+      @media (min-width: 1025px) {
+        font-size: 2.4rem;
+        line-height: 3.4rem;
+      }
+    }
+
+    &.text-right {
+      text-align: right;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 10%;
+      width: 1px;
+      height: 80%;
+      background-color: var(--white);
+    }
+  }
+
+  .title {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    h3 {
+      font-size: 6.4rem;
+      font-weight: 700;
+    }
+  }
+
+  .localizacao {
+    display: flex;
+    background-color: var(--orange);
+    height: 72rem;
+    align-items: center;
+    color: var(--white);
+  }
+}
