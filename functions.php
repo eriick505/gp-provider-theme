@@ -23,4 +23,10 @@ function register_my_menu() {
 }
 add_action( 'init', 'register_my_menu' );
 
+// Suporte a Título das páginas dinâmicos
+function title_tag() {
+  add_theme_support('title-tag');
+}
+add_action('after_setup_theme', 'title_tag');
+
 ?>
