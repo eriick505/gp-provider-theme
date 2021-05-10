@@ -53,19 +53,23 @@
     }
 
     p {
+      text-align: left;
       font-size: 2rem;
 
       @media (min-width: 1025px) {
+        text-align: justify;
         font-size: 2.4rem;
         line-height: 3.4rem;
       }
     }
 
     &.text-right {
-      text-align: left;
+      p {
+        text-align: left;
 
-      @media (min-width: 1025px) {
-        text-align: right;
+        @media (min-width: 1025px) {
+          text-align: right;
+        }
       }
     }
 

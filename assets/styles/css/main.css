@@ -1403,22 +1403,24 @@ main#app {
 }
 
 .pageInstitucional .content p {
+  text-align: left;
   font-size: 2rem;
 }
 
 @media (min-width: 1025px) {
   .pageInstitucional .content p {
+    text-align: justify;
     font-size: 2.4rem;
     line-height: 3.4rem;
   }
 }
 
-.pageInstitucional .content.text-right {
+.pageInstitucional .content.text-right p {
   text-align: left;
 }
 
 @media (min-width: 1025px) {
-  .pageInstitucional .content.text-right {
+  .pageInstitucional .content.text-right p {
     text-align: right;
   }
 }
