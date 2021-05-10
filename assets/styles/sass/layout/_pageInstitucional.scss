@@ -1,0 +1,153 @@
+.pageInstitucional {
+  .row {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @media (min-width: 1025px) {
+      grid-template-columns: 1fr 55.5rem;
+    }
+
+    @media (min-width: 1025px) {
+      &.reverse {
+        grid-template-columns: 55.5rem 1fr;
+      }
+    }
+
+    &.reverse .title {
+      @media (max-width: 1025px) {
+        grid-row: 1;
+      }
+
+      @media (min-width: 1025px) {
+        justify-content: flex-end;
+      }
+    }
+
+    &.reverse .content {
+      @media (min-width: 1025px) {
+        padding-left: 0;
+        padding-right: 12%;
+
+        &::before {
+          display: none;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          right: 0;
+          top: 10%;
+          width: 1px;
+          height: 80%;
+          background-color: var(--white);
+        }
+      }
+    }
+  }
+
+  .content {
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    @media (min-width: 1025px) {
+      padding-left: 12%;
+    }
+
+    p {
+      text-align: left;
+      font-size: 2rem;
+      width: 100%;
+
+      @media (min-width: 1025px) {
+        text-align: justify;
+        font-size: 2.4rem;
+        line-height: 3.4rem;
+      }
+    }
+
+    @media (min-width: 1025px) {
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 10%;
+        width: 1px;
+        height: 80%;
+        background-color: var(--white);
+      }
+    }
+  }
+
+  .title {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2rem;
+
+    @media (min-width: 1025px) {
+      justify-content: flex-start;
+      margin-bottom: 0;
+    }
+
+    h3 {
+      font-size: 3.4rem;
+      font-weight: 700;
+
+      @media (min-width: 769px) {
+        font-size: 6.4rem;
+      }
+    }
+  }
+
+  .text-right {
+    h3 {
+      text-align: center;
+
+      @media (min-width: 1025px) {
+        text-align: right;
+      }
+    }
+
+    p {
+      text-align: left;
+
+      @media (min-width: 1025px) {
+        text-align: right;
+      }
+    }
+  }
+
+  .sectionPage {
+    display: flex;
+    background-color: var(--orange);
+    align-items: center;
+    color: var(--white);
+    padding: 4rem 0;
+    background-size: cover;
+    background-position: center;
+
+    @media (min-width: 1025px) {
+      height: 72rem;
+    }
+  }
+
+  .localization {
+    background-image: url("../../img/backgrounds/bg-localizacao.jpg");
+  }
+
+  .people {
+    background-image: url("../../img/backgrounds/bg-pessoas.jpg");
+  }
+
+  .integration {
+    background-image: url("../../img/backgrounds/bg-integracao.jpg");
+  }
+
+  .niches {
+    background-image: url("../../img/backgrounds/bg-nichos.jpg");
+  }
+}
