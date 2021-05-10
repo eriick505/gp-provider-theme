@@ -8,7 +8,7 @@
 
   <section class="localizacao">
     <div class="container">
-      <div class="row">
+      <div class="row reverse">
         <div class="content text-right">
           <p>Com nossa matriz localizada em Recife ( PE ), estamos presentes 
           em mais de 800 municípios através de nossas operações e filiais em 
