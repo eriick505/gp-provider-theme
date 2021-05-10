@@ -47,6 +47,10 @@
 
   .content {
     position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
     @media (min-width: 1025px) {
       padding-left: 12%;
@@ -55,21 +59,12 @@
     p {
       text-align: left;
       font-size: 2rem;
+      width: 100%;
 
       @media (min-width: 1025px) {
         text-align: justify;
         font-size: 2.4rem;
         line-height: 3.4rem;
-      }
-    }
-
-    &.text-right {
-      p {
-        text-align: left;
-
-        @media (min-width: 1025px) {
-          text-align: right;
-        }
       }
     }
 
@@ -108,6 +103,24 @@
     }
   }
 
+  .text-right {
+    h3 {
+      text-align: center;
+
+      @media (min-width: 1025px) {
+        text-align: right;
+      }
+    }
+
+    p {
+      text-align: left;
+
+      @media (min-width: 1025px) {
+        text-align: right;
+      }
+    }
+  }
+
   .sectionPage {
     display: flex;
     background-color: var(--orange);
@@ -128,5 +141,9 @@
 
   .people {
     background-image: url("../../img/backgrounds/bg-pessoas.jpg");
+  }
+
+  .integration {
+    background-image: url("../../img/backgrounds/bg-integracao.jpg");
   }
 }

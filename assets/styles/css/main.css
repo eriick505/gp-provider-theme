@@ -1394,6 +1394,19 @@ main#app {
 
 .pageInstitucional .content {
   position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media (min-width: 1025px) {
@@ -1405,6 +1418,7 @@ main#app {
 .pageInstitucional .content p {
   text-align: left;
   font-size: 2rem;
+  width: 100%;
 }
 
 @media (min-width: 1025px) {
@@ -1412,16 +1426,6 @@ main#app {
     text-align: justify;
     font-size: 2.4rem;
     line-height: 3.4rem;
-  }
-}
-
-.pageInstitucional .content.text-right p {
-  text-align: left;
-}
-
-@media (min-width: 1025px) {
-  .pageInstitucional .content.text-right p {
-    text-align: right;
   }
 }
 
@@ -1471,6 +1475,26 @@ main#app {
   }
 }
 
+.pageInstitucional .text-right h3 {
+  text-align: center;
+}
+
+@media (min-width: 1025px) {
+  .pageInstitucional .text-right h3 {
+    text-align: right;
+  }
+}
+
+.pageInstitucional .text-right p {
+  text-align: left;
+}
+
+@media (min-width: 1025px) {
+  .pageInstitucional .text-right p {
+    text-align: right;
+  }
+}
+
 .pageInstitucional .sectionPage {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1497,6 +1521,10 @@ main#app {
 
 .pageInstitucional .people {
   background-image: url("../../img/backgrounds/bg-pessoas.jpg");
+}
+
+.pageInstitucional .integration {
+  background-image: url("../../img/backgrounds/bg-integracao.jpg");
 }
 
 .footer .navFooter {
