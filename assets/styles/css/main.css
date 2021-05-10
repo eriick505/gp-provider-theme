@@ -1350,8 +1350,8 @@ main#app {
 
 @media (min-width: 1025px) {
   .pageInstitucional .row {
-    -ms-grid-columns: 59.5rem 1fr;
-        grid-template-columns: 59.5rem 1fr;
+    -ms-grid-columns: 55.5rem 1fr;
+        grid-template-columns: 55.5rem 1fr;
   }
 }
 
@@ -1375,14 +1375,16 @@ main#app {
   text-align: right;
 }
 
-.pageInstitucional .content::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 10%;
-  width: 1px;
-  height: 80%;
-  background-color: var(--white);
+@media (min-width: 1025px) {
+  .pageInstitucional .content::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 10%;
+    width: 1px;
+    height: 80%;
+    background-color: var(--white);
+  }
 }
 
 .pageInstitucional .title {
@@ -1392,9 +1394,9 @@ main#app {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   text-align: center;
 }
 
@@ -1413,6 +1415,9 @@ main#app {
       -ms-flex-align: center;
           align-items: center;
   color: var(--white);
+  background-image: url("../../img/backgrounds/bg-localizacao.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .footer .navFooter {
