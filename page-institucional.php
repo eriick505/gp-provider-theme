@@ -72,6 +72,4 @@
   </section>
 </main>
 
-<h1>institucional</h1>
-
 <?php get_footer(); ?>
