@@ -7,8 +7,8 @@
   <?php get_template_part('components/headerPage'); ?>
 
   <section class="wrapper">
-    <div>
-      <div class="content">
+    <div class="content">
+      <div class="infoContent">
         <h2>Junte-se a nós!</h2>
         <p>A nossa cultura é trabalhar sempre em cooperação com a nossa equipe. 
         Acreditamos que investir nos colaboradores é trazer ainda mais qualidade 
@@ -44,7 +44,7 @@
               id="mensagem"
               placeholder="Selecionar Currículo"
             />
-            <span class="info">Arquivo com tamanho máximo de 2MB</span>
+            <span class="infoLabel">Arquivo com tamanho máximo de 2MB</span>
           </div>
           <button type="submit">ENVIAR</button>
         </form>

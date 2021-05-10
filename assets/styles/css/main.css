@@ -292,7 +292,7 @@ img {
 
 @media (min-width: 1025px) {
   .headerPage {
-    height: 21rem;
+    height: 27rem;
     text-align: left;
   }
 }
@@ -1529,6 +1529,25 @@ main#app {
 
 .pageInstitucional .niches {
   background-image: url("../../img/backgrounds/bg-nichos.jpg");
+}
+
+.pageWorkWithUs .wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+  gap: 2rem;
+}
+
+.pageWorkWithUs .wrapper::after {
+  content: "";
+  display: block;
+  background-color: var(--orange);
+}
+
+.pageWorkWithUs .wrapper .content {
+  padding: 10rem;
 }
 
 .footer .navFooter {

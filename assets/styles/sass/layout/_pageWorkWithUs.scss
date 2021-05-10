@@ -1,0 +1,18 @@
+.pageWorkWithUs {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+    gap: 2rem;
+
+    &::after {
+      content: "";
+      display: block;
+      background-color: var(--orange);
+    }
+
+    .content {
+      padding: 10rem;
+    }
+  }
+}
