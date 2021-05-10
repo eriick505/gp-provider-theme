@@ -53,6 +53,23 @@
       </div>
     </div>
   </section>
+
+  <section class="niches sectionPage">
+    <div class="container">
+      <div class="row">
+        <div class="title">
+          <h3>NICHOS</h3>
+        </div>
+        <div class="content">
+          <p>Especialista em Atendimento : Call Center / Contact Center, 
+            Atendimento Presencial ( BPO total e/ou parcial ) Serviços 
+            Comerciais e de Back office.</p>
+          <p>Expertise comprovada e premiada em Gestão de Atendimento para 
+            companhias de Utilities.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 
 <h1>institucional</h1>

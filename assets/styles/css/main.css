@@ -1527,6 +1527,10 @@ main#app {
   background-image: url("../../img/backgrounds/bg-integracao.jpg");
 }
 
+.pageInstitucional .niches {
+  background-image: url("../../img/backgrounds/bg-nichos.jpg");
+}
+
 .footer .navFooter {
   background-color: #f3f3f3;
   padding: 2rem 0;
