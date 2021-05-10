@@ -6,7 +6,7 @@
 <main class="pageInstitucional">
   <?php get_template_part('components/headerPage'); ?>
 
-  <section class="localizacao">
+  <section class="localizacao sectionPage">
     <div class="container">
       <div class="row reverse">
         <div class="content text-right">

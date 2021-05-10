@@ -69,18 +69,21 @@
     }
   }
 
-  .localizacao {
+  .sectionPage {
     display: flex;
     background-color: var(--orange);
     align-items: center;
     color: var(--white);
     padding: 4rem 0;
-    background-image: url("../../img/backgrounds/bg-localizacao.jpg");
     background-size: cover;
     background-position: center;
 
     @media (min-width: 1025px) {
       height: 72rem;
     }
+  }
+
+  .localizacao {
+    background-image: url("../../img/backgrounds/bg-localizacao.jpg");
   }
 }

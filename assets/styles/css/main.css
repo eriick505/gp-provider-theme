@@ -303,7 +303,7 @@ img {
   font-weight: 400;
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 768px) {
   .headerPage h2 {
     font-size: 4.8rem;
   }
@@ -1429,7 +1429,7 @@ main#app {
   }
 }
 
-.pageInstitucional .localizacao {
+.pageInstitucional .sectionPage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1439,15 +1439,18 @@ main#app {
           align-items: center;
   color: var(--white);
   padding: 4rem 0;
-  background-image: url("../../img/backgrounds/bg-localizacao.jpg");
   background-size: cover;
   background-position: center;
 }
 
 @media (min-width: 1025px) {
-  .pageInstitucional .localizacao {
+  .pageInstitucional .sectionPage {
     height: 72rem;
   }
+}
+
+.pageInstitucional .localizacao {
+  background-image: url("../../img/backgrounds/bg-localizacao.jpg");
 }
 
 .footer .navFooter {
