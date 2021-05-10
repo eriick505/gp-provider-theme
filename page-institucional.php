@@ -6,7 +6,7 @@
 <main class="pageInstitucional">
   <?php get_template_part('components/headerPage'); ?>
 
-  <section class="localizacao sectionPage">
+  <section class="localization sectionPage">
     <div class="container">
       <div class="row reverse">
         <div class="content text-right">
@@ -17,6 +17,24 @@
         </div>
         <div class="title">
           <h3>LOCALIZAÇÃO</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="people sectionPage">
+    <div class="container">
+      <div class="row">
+        <div class="title">
+          <h3>PESSOAS</h3>
+        </div>
+        <div class="content">
+          <p>Nosso "Bem" mais precioso, são as pessoas!</p>
+          <p>Em nosso processo de R&S, utilizamos ferramentas direcionadas 
+            para avaliar o melhor perfil de Contratação.</p>
+          <p>Gestão contínua de Resultados.</p>
+          <p>Retenção de Talentos e Desenvolvimento de Carreira, através de 
+            Programas de Incentivo.</p>
         </div>
       </div>
     </div>

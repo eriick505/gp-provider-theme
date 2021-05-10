@@ -1346,6 +1346,13 @@ main#app {
 
 @media (min-width: 1025px) {
   .pageInstitucional .row {
+    -ms-grid-columns: 1fr 55.5rem;
+        grid-template-columns: 1fr 55.5rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .pageInstitucional .row.reverse {
     -ms-grid-columns: 55.5rem 1fr;
         grid-template-columns: 55.5rem 1fr;
   }
@@ -1355,7 +1362,33 @@ main#app {
   .pageInstitucional .row.reverse .title {
     -ms-grid-row: 1;
     grid-row: 1;
-    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .pageInstitucional .row.reverse .title {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+@media (min-width: 1025px) {
+  .pageInstitucional .row.reverse .content {
+    padding-left: 0;
+    padding-right: 12%;
+  }
+  .pageInstitucional .row.reverse .content::before {
+    display: none;
+  }
+  .pageInstitucional .row.reverse .content::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 10%;
+    width: 1px;
+    height: 80%;
+    background-color: var(--white);
   }
 }
 
@@ -1363,15 +1396,20 @@ main#app {
   position: relative;
 }
 
+@media (min-width: 1025px) {
+  .pageInstitucional .content {
+    padding-left: 12%;
+  }
+}
+
 .pageInstitucional .content p {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 @media (min-width: 1025px) {
   .pageInstitucional .content p {
     font-size: 2.4rem;
     line-height: 3.4rem;
-    max-width: 90%;
   }
 }
 
@@ -1386,10 +1424,10 @@ main#app {
 }
 
 @media (min-width: 1025px) {
-  .pageInstitucional .content::after {
+  .pageInstitucional .content::before {
     content: "";
     position: absolute;
-    right: 0;
+    left: 0;
     top: 10%;
     width: 1px;
     height: 80%;
@@ -1408,13 +1446,15 @@ main#app {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 @media (min-width: 1025px) {
   .pageInstitucional .title {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-bottom: 0;
   }
 }
 
@@ -1449,8 +1489,12 @@ main#app {
   }
 }
 
-.pageInstitucional .localizacao {
+.pageInstitucional .localization {
   background-image: url("../../img/backgrounds/bg-localizacao.jpg");
+}
+
+.pageInstitucional .people {
+  background-image: url("../../img/backgrounds/bg-pessoas.jpg");
 }
 
 .footer .navFooter {
