@@ -1,0 +1,28 @@
+.pageContact {
+  .wrapper {
+    @media (min-width: 768px) {
+      min-height: 1044px;
+      grid-template-columns: 1fr 46%;
+    }
+
+    .content {
+      padding: 3rem 2rem;
+
+      @media (min-width: 1025px) {
+        padding: 11rem 9rem;
+      }
+
+      h3 {
+        margin-bottom: 2rem;
+      }
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      background-color: var(--orange);
+      background-image: url("../../img/backgrounds/bg-work-contact.jpg");
+      background-size: cover;
+    }
+  }
+}
