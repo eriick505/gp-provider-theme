@@ -1,6 +1,7 @@
 .pageWithForm {
   .wrapper {
     display: grid;
+    grid-template-columns: 1fr;
 
     .content {
       padding: 3rem 2rem;

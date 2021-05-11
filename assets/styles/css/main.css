@@ -1534,6 +1534,8 @@ main#app {
 .pageWithForm .wrapper {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
 }
 
 .pageWithForm .wrapper .content {
@@ -1638,11 +1640,6 @@ main#app {
           transform: scale(0.9);
 }
 
-.pageWorkWithUs .wrapper {
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-}
-
 @media (min-width: 768px) {
   .pageWorkWithUs .wrapper {
     min-height: 1044px;
@@ -1671,6 +1668,22 @@ main#app {
   font-size: 2rem;
   line-height: 2.4rem;
   font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .pageContact .wrapper {
+    min-height: 1044px;
+    -ms-grid-columns: 1fr 46%;
+        grid-template-columns: 1fr 46%;
+  }
+}
+
+.pageContact .wrapper::before {
+  content: "";
+  display: block;
+  background-color: var(--orange);
+  background-image: url("../../img/backgrounds/bg-work-contact.jpg");
+  background-size: cover;
 }
 
 .footer .navFooter {
