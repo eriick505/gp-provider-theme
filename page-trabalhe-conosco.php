@@ -16,7 +16,7 @@
         talentos dispostos a dividir esse grande sonho com a gente.</p>
       </div>
       <div class="form">
-        <h3>ENTRE EM CONTATO</h3>
+        <h3>Cadastre seu currículo</h3>
         <form action="">
           <div class="formGroup">
             <label for="nome">Seu Nome</label>
