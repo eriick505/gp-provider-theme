@@ -30,14 +30,13 @@
             />
           </div>
           <div class="formGroup">
-            <label for="mensagem">Selecionar Currículo</label>
+            <label for="assunto">Assunto</label>
             <input
               type="text"
-              name="mensagem"
-              id="mensagem"
-              placeholder="Selecionar Currículo"
+              name="assunto"
+              id="assunto"
+              placeholder="Assunto"
             />
-            <span class="infoLabel">Arquivo com tamanho máximo de 2MB</span>
           </div>
           <button type="submit">ENVIAR</button>
         </form>
