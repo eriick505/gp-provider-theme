@@ -38,6 +38,15 @@
               placeholder="Assunto"
             />
           </div>
+          <div class="formGroup">
+            <label for="mensagem">Sua Mensagem</label>
+            <textarea 
+              name="mensagem" 
+              id="mensagem" 
+              rows="4" 
+              placeholder="Sua Mensagem"
+            ></textarea>
+          </div>
           <button type="submit">ENVIAR</button>
         </form>
       </div>

@@ -2,7 +2,7 @@
   .wrapper {
     @media (min-width: 768px) {
       min-height: 1044px;
-      grid-template-columns: 46% 1fr;
+      grid-template-columns: 47% 1fr;
     }
 
     &::after {
@@ -14,7 +14,11 @@
     }
 
     .infoContent {
-      margin-bottom: 6rem;
+      margin-bottom: 3rem;
+
+      @media (min-width: 768px) {
+        margin-bottom: 6rem;
+      }
 
       h2 {
         margin-bottom: 1.6rem;
