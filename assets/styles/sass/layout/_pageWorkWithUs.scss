@@ -1,0 +1,32 @@
+.pageWorkWithUs {
+  .wrapper {
+    grid-template-columns: 1fr;
+
+    @media (min-width: 768px) {
+      min-height: 1044px;
+      grid-template-columns: 46% 1fr;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      background-color: var(--orange);
+      background-image: url("../../img/backgrounds/bg-work-contact.jpg");
+      background-size: cover;
+    }
+
+    .infoContent {
+      margin-bottom: 6rem;
+
+      h2 {
+        margin-bottom: 1.6rem;
+      }
+
+      p {
+        font-size: 2rem;
+        line-height: 2.4rem;
+        font-weight: 400;
+      }
+    }
+  }
+}

@@ -292,7 +292,7 @@ img {
 
 @media (min-width: 1025px) {
   .headerPage {
-    height: 21rem;
+    height: 27rem;
     text-align: left;
   }
 }
@@ -1529,6 +1529,148 @@ main#app {
 
 .pageInstitucional .niches {
   background-image: url("../../img/backgrounds/bg-nichos.jpg");
+}
+
+.pageWithForm .wrapper {
+  display: -ms-grid;
+  display: grid;
+}
+
+.pageWithForm .wrapper .content {
+  padding: 3rem 2rem;
+}
+
+@media (min-width: 1025px) {
+  .pageWithForm .wrapper .content {
+    padding: 9rem;
+  }
+}
+
+.pageWithForm .form {
+  color: var(--dark-500);
+}
+
+.pageWithForm .form h3 {
+  margin-bottom: 3.5rem;
+}
+
+.pageWithForm .form label {
+  display: block;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.pageWithForm .form input {
+  border: 1px solid var(--dark-500);
+  border-radius: 5rem;
+  background: transparent;
+  color: var(--white);
+  padding: 1rem 2.8rem;
+  display: inline-block;
+  width: 100%;
+}
+
+.pageWithForm .form input::-webkit-input-placeholder {
+  color: var(--dark-500);
+  opacity: 1;
+}
+
+.pageWithForm .form input:-ms-input-placeholder {
+  color: var(--dark-500);
+  opacity: 1;
+}
+
+.pageWithForm .form input::-ms-input-placeholder {
+  color: var(--dark-500);
+  opacity: 1;
+}
+
+.pageWithForm .form input::placeholder {
+  color: var(--dark-500);
+  opacity: 1;
+}
+
+.pageWithForm .form input:hover, .pageWithForm .form input:focus {
+  outline: none;
+  border-color: var(--orange);
+  -webkit-box-shadow: 2px 2px 7px 2px rgba(234, 118, 19, 0.38);
+          box-shadow: 2px 2px 7px 2px rgba(234, 118, 19, 0.38);
+}
+
+.pageWithForm .form .formGroup {
+  margin-bottom: 2rem;
+}
+
+.pageWithForm .form .formGroup .infoLabel {
+  font-size: 1.4rem;
+  color: var(--dark-300);
+  display: block;
+  margin-top: 1rem;
+}
+
+.pageWithForm .form button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 6rem;
+  font-size: 1.4rem;
+  width: 100%;
+  height: 38px;
+  background: var(--orangeGradient);
+  color: var(--white);
+  -webkit-box-shadow: 0px 7px 9px rgba(36, 121, 248, 0.1);
+          box-shadow: 0px 7px 9px rgba(36, 121, 248, 0.1);
+  border-radius: 14px;
+  -webkit-transition: var(--transition2s);
+  transition: var(--transition2s);
+  margin-left: auto;
+}
+
+.pageWithForm .form button:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.pageWorkWithUs .wrapper {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .pageWorkWithUs .wrapper {
+    min-height: 1044px;
+    -ms-grid-columns: 46% 1fr;
+        grid-template-columns: 46% 1fr;
+  }
+}
+
+.pageWorkWithUs .wrapper::after {
+  content: "";
+  display: block;
+  background-color: var(--orange);
+  background-image: url("../../img/backgrounds/bg-work-contact.jpg");
+  background-size: cover;
+}
+
+.pageWorkWithUs .wrapper .infoContent {
+  margin-bottom: 6rem;
+}
+
+.pageWorkWithUs .wrapper .infoContent h2 {
+  margin-bottom: 1.6rem;
+}
+
+.pageWorkWithUs .wrapper .infoContent p {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  font-weight: 400;
 }
 
 .footer .navFooter {
