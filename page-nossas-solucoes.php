@@ -143,6 +143,53 @@
       </div>
     </div>
   </section>
+
+  <section class="contactCenter">
+    <div class="container">
+      <header>
+        <h2>CONTACT CENTER</h2>
+        <h3>Satisfação em proporcionar a melhor experiência ao seu cliente.</h3>
+        <p>
+          Experiência é o grande diferencial do Grupo Provider em Contact 
+          Center, seja em contact center ativo ou receptivo. Sabemos o que o
+          mercado precisa e qual a melhor forma de atender os clientes. Com uma 
+          equipe de funcionários qualificados e experientes, passamos ao seus 
+          cliente a satisfação em atender bem.
+        </p>
+      </header>
+      <div class="content">
+        <img src="<?php bloginfo('template_url'); ?>/assets/img/sections/contact-center-solucoes.jpg" alt="Imagem referente ao serviço Contact Center">
+  
+        <ul class="collapseList" data-js="collapseList">
+          <li>
+            <a
+              href="#"
+              aria-expanded="false"
+              type="button"
+              data-target="#atendimentoPresencialCollapse"
+              class="collapseTitle"
+            >
+              <span class="icon active"></span>
+              <span> Atendimento Presencial </span>
+            </a>
+  
+            <div 
+              class="collapseContent active" 
+              id="atendimentoPresencialCollapse"
+            >
+              <p>
+                Com profissionais qualificados e lojas personalizadas de acordo 
+                com a necessidade de cada cliente, oferecemos gestão e 
+                atendimento em dois níveis: informações gerais e geração de 
+                múltiplos serviços. Atuamos na emissão de contas e documentação, 
+                mudança de titularidade e os demais serviços relacionados.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
 </main>
 
 <?php get_footer(); ?>

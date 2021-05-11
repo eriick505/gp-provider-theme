@@ -28,16 +28,19 @@
     }
   }
 
-  .bpo {
-    .content {
-      margin-top: 4rem;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 3rem;
+  .content {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
 
-      @media (min-width: 1025px) {
-        grid-template-columns: 1fr 53%;
-      }
+    @media (min-width: 1025px) {
+      grid-template-columns: 1fr 53%;
     }
+  }
+
+  .collapseList li {
+    margin-bottom: 1.8rem;
+    padding: 1rem 2.6rem 1rem 1rem;
   }
 }

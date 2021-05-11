@@ -1750,7 +1750,7 @@ main#app {
   line-height: 2.6rem;
 }
 
-.pageOurSolutions .bpo .content {
+.pageOurSolutions .content {
   margin-top: 4rem;
   display: -ms-grid;
   display: grid;
@@ -1760,10 +1760,15 @@ main#app {
 }
 
 @media (min-width: 1025px) {
-  .pageOurSolutions .bpo .content {
+  .pageOurSolutions .content {
     -ms-grid-columns: 1fr 53%;
         grid-template-columns: 1fr 53%;
   }
+}
+
+.pageOurSolutions .collapseList li {
+  margin-bottom: 1.8rem;
+  padding: 1rem 2.6rem 1rem 1rem;
 }
 
 .footer .navFooter {
