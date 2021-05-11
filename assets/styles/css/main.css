@@ -1531,69 +1531,37 @@ main#app {
   background-image: url("../../img/backgrounds/bg-nichos.jpg");
 }
 
-.pageWorkWithUs .wrapper {
+.pageWithForm .wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
 }
 
-@media (min-width: 768px) {
-  .pageWorkWithUs .wrapper {
-    min-height: 1044px;
-    -ms-grid-columns: 46% 1fr;
-        grid-template-columns: 46% 1fr;
-  }
-}
-
-.pageWorkWithUs .wrapper::after {
-  content: "";
-  display: block;
-  background-color: var(--orange);
-  background-image: url("../../img/backgrounds/bg-work-contact.jpg");
-  background-size: cover;
-}
-
-.pageWorkWithUs .wrapper .content {
+.pageWithForm .wrapper .content {
   padding: 3rem 2rem;
 }
 
 @media (min-width: 1025px) {
-  .pageWorkWithUs .wrapper .content {
+  .pageWithForm .wrapper .content {
     padding: 9rem;
   }
 }
 
-.pageWorkWithUs .wrapper .infoContent {
-  margin-bottom: 6rem;
-}
-
-.pageWorkWithUs .wrapper .infoContent h2 {
-  margin-bottom: 1.6rem;
-}
-
-.pageWorkWithUs .wrapper .infoContent p {
-  font-size: 2rem;
-  line-height: 2.4rem;
-  font-weight: 400;
-}
-
-.pageWorkWithUs .wrapper .form {
+.pageWithForm .form {
   color: var(--dark-500);
 }
 
-.pageWorkWithUs .wrapper .form h3 {
+.pageWithForm .form h3 {
   margin-bottom: 3.5rem;
 }
 
-.pageWorkWithUs .wrapper .form label {
+.pageWithForm .form label {
   display: block;
   width: 1px;
   height: 1px;
   overflow: hidden;
 }
 
-.pageWorkWithUs .wrapper .form input {
+.pageWithForm .form input {
   border: 1px solid var(--dark-500);
   border-radius: 5rem;
   background: transparent;
@@ -1603,45 +1571,45 @@ main#app {
   width: 100%;
 }
 
-.pageWorkWithUs .wrapper .form input::-webkit-input-placeholder {
+.pageWithForm .form input::-webkit-input-placeholder {
   color: var(--dark-500);
   opacity: 1;
 }
 
-.pageWorkWithUs .wrapper .form input:-ms-input-placeholder {
+.pageWithForm .form input:-ms-input-placeholder {
   color: var(--dark-500);
   opacity: 1;
 }
 
-.pageWorkWithUs .wrapper .form input::-ms-input-placeholder {
+.pageWithForm .form input::-ms-input-placeholder {
   color: var(--dark-500);
   opacity: 1;
 }
 
-.pageWorkWithUs .wrapper .form input::placeholder {
+.pageWithForm .form input::placeholder {
   color: var(--dark-500);
   opacity: 1;
 }
 
-.pageWorkWithUs .wrapper .form input:hover, .pageWorkWithUs .wrapper .form input:focus {
+.pageWithForm .form input:hover, .pageWithForm .form input:focus {
   outline: none;
   border-color: var(--orange);
   -webkit-box-shadow: 2px 2px 7px 2px rgba(234, 118, 19, 0.38);
           box-shadow: 2px 2px 7px 2px rgba(234, 118, 19, 0.38);
 }
 
-.pageWorkWithUs .wrapper .form .formGroup {
+.pageWithForm .form .formGroup {
   margin-bottom: 2rem;
 }
 
-.pageWorkWithUs .wrapper .form .formGroup .infoLabel {
+.pageWithForm .form .formGroup .infoLabel {
   font-size: 1.4rem;
   color: var(--dark-300);
   display: block;
   margin-top: 1rem;
 }
 
-.pageWorkWithUs .wrapper .form button {
+.pageWithForm .form button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1665,9 +1633,44 @@ main#app {
   margin-left: auto;
 }
 
-.pageWorkWithUs .wrapper .form button:hover {
+.pageWithForm .form button:hover {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
+}
+
+.pageWorkWithUs .wrapper {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .pageWorkWithUs .wrapper {
+    min-height: 1044px;
+    -ms-grid-columns: 46% 1fr;
+        grid-template-columns: 46% 1fr;
+  }
+}
+
+.pageWorkWithUs .wrapper::after {
+  content: "";
+  display: block;
+  background-color: var(--orange);
+  background-image: url("../../img/backgrounds/bg-work-contact.jpg");
+  background-size: cover;
+}
+
+.pageWorkWithUs .wrapper .infoContent {
+  margin-bottom: 6rem;
+}
+
+.pageWorkWithUs .wrapper .infoContent h2 {
+  margin-bottom: 1.6rem;
+}
+
+.pageWorkWithUs .wrapper .infoContent p {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  font-weight: 400;
 }
 
 .footer .navFooter {

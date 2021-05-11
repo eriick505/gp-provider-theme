@@ -3,7 +3,7 @@
   get_header();
 ?>
 
-<main class="pageWorkWithUs">
+<main class="pageWithForm pageWorkWithUs">
   <?php get_template_part('components/headerPage'); ?>
 
   <section class="wrapper">
