@@ -27,23 +27,23 @@
               href="#"
               aria-expanded="false"
               type="button"
-              data-target="#pernambucoCollapse"
+              data-target="#atendimentoPresencialCollapse"
               class="collapseTitle"
             >
               <span class="icon active"></span>
-              <span> Pernambuco </span>
+              <span> Atendimento Presencial </span>
             </a>
   
-            <div class="collapseContent active" id="pernambucoCollapse">
+            <div 
+              class="collapseContent active" 
+              id="atendimentoPresencialCollapse"
+            >
               <p>
-                <b>Recife:</b> Rua Dois de Julho, 80 - Bairro Santo Amaro
-                - CEP: 50.040-180 Contato: +55 (81) 2122-2122 - CNPJ:
-                01.159.435/0001-46
-              </p>
-              <p>
-                <b>Caruaru:</b> Rod BR 104, KM 62, S/N - Bairro Nova
-                Caruaru - CEP: 55.002-971 Contato: +55 81 3727-7650/5420 -
-                CNPJ: 01.159.435/0005-70
+                Com profissionais qualificados e lojas personalizadas de acordo 
+                com a necessidade de cada cliente, oferecemos gestão e 
+                atendimento em dois níveis: informações gerais e geração de 
+                múltiplos serviços. Atuamos na emissão de contas e documentação, 
+                mudança de titularidade e os demais serviços relacionados.
               </p>
             </div>
           </li>
@@ -52,23 +52,90 @@
               href="#"
               aria-expanded="false"
               type="button"
-              data-target="#saoPauloCollapse"
+              data-target="#promocaoVendasCollapse"
               class="collapseTitle"
             >
               <span class="icon"></span>
-              <span> São Paulo </span>
+              <span> Promoção de Vendas </span>
             </a>
   
-            <div class="collapseContent" id="saoPauloCollapse">
+            <div 
+              class="collapseContent" 
+              id="promocaoVendasCollapse"
+            >
               <p>
-                <b>Recife:</b> Rua Dois de Julho, 80 - Bairro Santo Amaro
-                - CEP: 50.040-180 Contato: +55 (81) 2122-2122 - CNPJ:
-                01.159.435/0001-46
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut 
+                officia quam qui est sit consectetur vero eos consequuntur 
+                fugit esse.
               </p>
+            </div>
+          </li>
+          <li>
+            <a
+              href="#"
+              aria-expanded="false"
+              type="button"
+              data-target="#maoObraEspecializadaCollapse"
+              class="collapseTitle"
+            >
+              <span class="icon"></span>
+              <span> Mão de Obra Especializada </span>
+            </a>
+  
+            <div 
+              class="collapseContent" 
+              id="maoObraEspecializadaCollapse"
+            >
               <p>
-                <b>Caruaru:</b> Rod BR 104, KM 62, S/N - Bairro Nova
-                Caruaru - CEP: 55.002-971 Contato: +55 81 3727-7650/5420 -
-                CNPJ: 01.159.435/0005-70
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut 
+                officia quam qui est sit consectetur vero eos consequuntur 
+                fugit esse.
+              </p>
+            </div>
+          </li>
+          <li>
+            <a
+              href="#"
+              aria-expanded="false"
+              type="button"
+              data-target="#servicosOperacoesComerciaisCollapse"
+              class="collapseTitle"
+            >
+              <span class="icon"></span>
+              <span> Serviços de Operações Comerciais </span>
+            </a>
+  
+            <div 
+              class="collapseContent" 
+              id="servicosOperacoesComerciaisCollapse"
+            >
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut 
+                officia quam qui est sit consectetur vero eos consequuntur 
+                fugit esse.
+              </p>
+            </div>
+          </li>
+          <li>
+            <a
+              href="#"
+              aria-expanded="false"
+              type="button"
+              data-target="#backOfficeCollapse"
+              class="collapseTitle"
+            >
+              <span class="icon"></span>
+              <span> Back Office </span>
+            </a>
+  
+            <div 
+              class="collapseContent" 
+              id="backOfficeCollapse"
+            >
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut 
+                officia quam qui est sit consectetur vero eos consequuntur 
+                fugit esse.
               </p>
             </div>
           </li>
