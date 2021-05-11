@@ -166,23 +166,93 @@
               href="#"
               aria-expanded="false"
               type="button"
-              data-target="#atendimentoPresencialCollapse"
+              data-target="#atendimentoSACCollapse"
               class="collapseTitle"
             >
               <span class="icon active"></span>
-              <span> Atendimento Presencial </span>
+              <span> Atendimento/SAC </span>
             </a>
   
             <div 
               class="collapseContent active" 
-              id="atendimentoPresencialCollapse"
+              id="atendimentoSACCollapse"
             >
               <p>
-                Com profissionais qualificados e lojas personalizadas de acordo 
-                com a necessidade de cada cliente, oferecemos gestão e 
-                atendimento em dois níveis: informações gerais e geração de 
-                múltiplos serviços. Atuamos na emissão de contas e documentação, 
-                mudança de titularidade e os demais serviços relacionados.
+                Para atender o cliente desde o esclarecimento de dúvidas aos 
+                pós-venda, atuamos em vários segmentos, público ou privado. 
+                Nossos serviços são integrados, convergindo às plataformas 
+                digitais ao modelo tradicional de atendimento. Garantimos a 
+                fidelização do seu cliente por meio de um tratamento 
+                personalizado.
+              </p>
+            </div>
+          </li>
+          <li>
+            <a
+              href="#"
+              aria-expanded="false"
+              type="button"
+              data-target="#televendasCollapse"
+              class="collapseTitle"
+            >
+              <span class="icon"></span>
+              <span> Televendas </span>
+            </a>
+  
+            <div 
+              class="collapseContent" 
+              id="televendasCollapse"
+            >
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Illo totam amet quas consectetur explicabo eligendi quae 
+                repellat praesentium enim debitis!
+              </p>
+            </div>
+          </li>
+          <li>
+            <a
+              href="#"
+              aria-expanded="false"
+              type="button"
+              data-target="#telecobrancaCollapse"
+              class="collapseTitle"
+            >
+              <span class="icon"></span>
+              <span> Telecobrança </span>
+            </a>
+  
+            <div 
+              class="collapseContent" 
+              id="telecobrancaCollapse"
+            >
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Illo totam amet quas consectetur explicabo eligendi quae 
+                repellat praesentium enim debitis!
+              </p>
+            </div>
+          </li>
+          <li>
+            <a
+              href="#"
+              aria-expanded="false"
+              type="button"
+              data-target="#monitoriaCollapse"
+              class="collapseTitle"
+            >
+              <span class="icon"></span>
+              <span> Monitoria </span>
+            </a>
+  
+            <div 
+              class="collapseContent" 
+              id="monitoriaCollapse"
+            >
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Illo totam amet quas consectetur explicabo eligendi quae 
+                repellat praesentium enim debitis!
               </p>
             </div>
           </li>

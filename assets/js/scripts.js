@@ -20,25 +20,29 @@ window.addEventListener("load", () => {
 });
 
 // COLLAPSE
-const collapseListEl = document.querySelector('[data-js="collapseList"]');
+const collapseListEl = document.querySelectorAll('[data-js="collapseList"]');
 
-collapseListEl.addEventListener("click", (event) => {
-  event.preventDefault();
+if (collapseListEl.length) {
+  collapseListEl.forEach((list) => {
+    list.addEventListener("click", (event) => {
+      event.preventDefault();
 
-  const target = event.target;
-  const dataTarget = "data-target";
+      const target = event.target;
+      const dataTarget = "data-target";
 
-  if (target.hasAttribute(dataTarget)) {
-    const dataValue = target.getAttribute(dataTarget);
-    const collapseContentEl = document.querySelector(dataValue);
-    const btnIconEl = target.querySelector(".icon");
+      if (target.hasAttribute(dataTarget)) {
+        const dataValue = target.getAttribute(dataTarget);
+        const collapseContentEl = document.querySelector(dataValue);
+        const btnIconEl = target.querySelector(".icon");
 
-    if (collapseContentEl) {
-      collapseContentEl.classList.toggle("active");
-    }
+        if (collapseContentEl) {
+          collapseContentEl.classList.toggle("active");
+        }
 
-    if (btnIconEl) {
-      btnIconEl.classList.toggle("active");
-    }
-  }
-});
+        if (btnIconEl) {
+          btnIconEl.classList.toggle("active");
+        }
+      }
+    });
+  });
+}
