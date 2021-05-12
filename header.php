@@ -78,7 +78,6 @@
         <div class="container">
           <a
             href="#"
-            target="_blank"
             rel="noopener noreferrer"
             class="logo"
             aria-label="Logo Grupo Provider"
