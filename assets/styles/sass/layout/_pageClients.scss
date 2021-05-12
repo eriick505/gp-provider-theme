@@ -1,0 +1,21 @@
+.pageClients {
+  background-color: var(--light-gray);
+
+  .listClients {
+    margin: 3rem 0;
+
+    @media (min-width: 1025px) {
+      margin: 10rem 0;
+    }
+
+    ul {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.9rem;
+
+      @media (min-width: 1025px) {
+        grid-template-columns: repeat(10, 1fr);
+      }
+    }
+  }
+}
