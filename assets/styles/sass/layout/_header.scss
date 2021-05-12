@@ -149,6 +149,14 @@
         margin-right: 2.4rem;
       }
 
+      li.current_page_item a {
+        color: var(--orange);
+
+        &::before {
+          width: 100%;
+        }
+      }
+
       a {
         color: var(--white);
         text-decoration: none;

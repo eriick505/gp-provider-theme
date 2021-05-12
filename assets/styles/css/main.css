@@ -543,6 +543,14 @@ main#app {
   margin-right: 2.4rem;
 }
 
+.header .mainHeader .navbar ul li.current_page_item a {
+  color: var(--orange);
+}
+
+.header .mainHeader .navbar ul li.current_page_item a::before {
+  width: 100%;
+}
+
 .header .mainHeader .navbar ul a {
   color: var(--white);
   text-decoration: none;
