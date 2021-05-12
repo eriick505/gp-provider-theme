@@ -13,8 +13,24 @@
       grid-template-columns: repeat(2, 1fr);
       gap: 1.9rem;
 
+      @media (min-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
       @media (min-width: 1025px) {
         grid-template-columns: repeat(10, 1fr);
+      }
+    }
+
+    li {
+      text-align: center;
+      transition: var(--transition2s);
+
+      @media (min-width: 1025px) {
+        &:hover {
+          filter: drop-shadow(2px 4px 6px rgba(17, 17, 17, 0.135));
+          transform: scale(1.1);
+        }
       }
     }
   }
