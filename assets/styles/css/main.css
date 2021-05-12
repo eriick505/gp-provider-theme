@@ -270,8 +270,14 @@ img {
 }
 
 .collapseList li .collapseContent p {
-  font-size: 1.3rem;
   line-height: 2rem;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 1025px) {
+  .collapseList li .collapseContent p {
+    font-size: 1.3rem;
+  }
 }
 
 .headerPage {
@@ -1719,6 +1725,72 @@ main#app {
   background-color: var(--orange);
   background-image: url("../../img/backgrounds/bg-work-contact.jpg");
   background-size: cover;
+}
+
+.pageOurSolutions section + section {
+  margin-top: 3.8rem;
+}
+
+@media (min-width: 1025px) {
+  .pageOurSolutions section + section {
+    margin-top: 7.8rem;
+  }
+}
+
+.pageOurSolutions header h2 {
+  font-size: 4rem;
+  color: var(--orange);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+
+@media (min-width: 1025px) {
+  .pageOurSolutions header h2 {
+    font-size: 4.8rem;
+  }
+}
+
+.pageOurSolutions header h3 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.pageOurSolutions header p {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+}
+
+.pageOurSolutions .content {
+  margin-top: 4rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+@media (min-width: 1025px) {
+  .pageOurSolutions .content {
+    -ms-grid-columns: 1fr 53%;
+        grid-template-columns: 1fr 53%;
+  }
+}
+
+.pageOurSolutions .collapseList li {
+  margin-bottom: 1.8rem;
+  padding: 1rem 2.6rem 1rem 1rem;
+}
+
+.pageOurSolutions .collapseList li .collapseContent p {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 1025px) {
+  .pageOurSolutions .collapseList li .collapseContent p {
+    font-size: 1.3rem;
+  }
 }
 
 .footer .navFooter {
