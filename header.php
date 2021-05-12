@@ -77,12 +77,15 @@
       <section class="mainHeader">
         <div class="container">
           <a
-            href="#"
+            href="<?php echo get_site_url(); ?>"
             rel="noopener noreferrer"
             class="logo"
             aria-label="Logo Grupo Provider"
           >
-            <img src="<?php bloginfo('template_url'); ?>/assets/img/logo.png" alt="logo grupo provider" />
+            <img 
+              src="<?php bloginfo('template_url'); ?>/assets/img/logo.png" 
+              alt="logo grupo provider" 
+            />
           </a>
 
           <nav class="navbar">
