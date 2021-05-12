@@ -586,7 +586,7 @@
 
     <div class="container">
       <footer>
-        <a href="#" class="btn btnOrangeGradient">Ver mais </a>
+        <a href="<?php echo get_site_url(); ?>/clientes" class="btn btnOrangeGradient">Ver mais </a>
       </footer>
     </div>
   </section>

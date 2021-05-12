@@ -1801,6 +1801,57 @@ main#app {
   }
 }
 
+.pageClients {
+  background-color: var(--light-gray);
+}
+
+.pageClients .listClients {
+  margin: 3rem 0;
+}
+
+@media (min-width: 1025px) {
+  .pageClients .listClients {
+    margin: 10rem 0;
+  }
+}
+
+.pageClients .listClients ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 1.9rem;
+}
+
+@media (min-width: 768px) {
+  .pageClients .listClients ul {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1025px) {
+  .pageClients .listClients ul {
+    -ms-grid-columns: (1fr)[10];
+        grid-template-columns: repeat(10, 1fr);
+  }
+}
+
+.pageClients .listClients li {
+  text-align: center;
+  -webkit-transition: var(--transition2s);
+  transition: var(--transition2s);
+}
+
+@media (min-width: 1025px) {
+  .pageClients .listClients li:hover {
+    -webkit-filter: drop-shadow(2px 4px 6px rgba(17, 17, 17, 0.135));
+            filter: drop-shadow(2px 4px 6px rgba(17, 17, 17, 0.135));
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
 .footer .navFooter {
   background-color: #f3f3f3;
   padding: 2rem 0;
