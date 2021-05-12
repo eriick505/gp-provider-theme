@@ -260,6 +260,101 @@
       </div>
     </div>
   </section>
+
+  <section class="tic">
+    <div class="container">
+      <header>
+        <h2>TIC</h2>
+        <h3>Satisfação em proporcionar a melhor experiência ao seu cliente.</h3>
+        <p>
+          Maior do Norte e Nordeste no segmento, o Grupo Provider já ultrapassou
+          as fronteiras regionais, levando tecnologia da informação e 
+          comunicação de qualidade a todo o país. Com sistemas criados para 
+          suprir as necessidades de qualquer organização, cria, controla e 
+          aperfeiçoa plataformas. São soluções rápidas e personalizadas para o 
+          negócio.
+        </p>
+      </header>
+      <div class="content">
+        <img src="<?php bloginfo('template_url'); ?>/assets/img/sections/tic-solucoes.jpg" alt="Imagem referente ao serviço TIC">
+  
+        <ul class="collapseList" data-js="collapseList">
+          <li>
+            <a
+              href="#"
+              aria-expanded="false"
+              type="button"
+              data-target="#attendanceCollapse"
+              class="collapseTitle"
+            >
+              <span class="icon active"></span>
+              <span> Attendance </span>
+            </a>
+  
+            <div 
+              class="collapseContent active" 
+              id="attendanceCollapse"
+            >
+              <p>
+                Garanta o controle da eficiência no atendimento, o 
+                acompanhamento da produtividade dos atendentes, monitoramento e 
+                gravação on-line de diálogo do atendente com o cliente e 
+                gerenciamento e controle de filas. Com o Attendance é possível 
+                ter maior eficiência no atendimento aos seus clientes e menor 
+                custo de atendimento para sua empresa.
+              </p>
+            </div>
+          </li>
+          <li>
+            <a
+              href="#"
+              aria-expanded="false"
+              type="button"
+              data-target="#mobileCollapse"
+              class="collapseTitle"
+            >
+              <span class="icon"></span>
+              <span> Mobile </span>
+            </a>
+  
+            <div 
+              class="collapseContent" 
+              id="mobileCollapse"
+            >
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Aliquid quidem nam necessitatibus doloremque corrupti ullam 
+                harum, vitae blanditiis et itaque!
+              </p>
+            </div>
+          </li>
+          <li>
+            <a
+              href="#"
+              aria-expanded="false"
+              type="button"
+              data-target="#equalMonitoriaCollapse"
+              class="collapseTitle"
+            >
+              <span class="icon"></span>
+              <span> Equal Monitoria </span>
+            </a>
+  
+            <div 
+              class="collapseContent" 
+              id="equalMonitoriaCollapse"
+            >
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Aliquid quidem nam necessitatibus doloremque corrupti ullam 
+                harum, vitae blanditiis et itaque!
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
 </main>
 
 <?php get_footer(); ?>

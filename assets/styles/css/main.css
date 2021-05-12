@@ -270,8 +270,14 @@ img {
 }
 
 .collapseList li .collapseContent p {
-  font-size: 1.3rem;
   line-height: 2rem;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 1025px) {
+  .collapseList li .collapseContent p {
+    font-size: 1.3rem;
+  }
 }
 
 .headerPage {
@@ -1732,11 +1738,17 @@ main#app {
 }
 
 .pageOurSolutions header h2 {
-  font-size: 4.8rem;
+  font-size: 4rem;
   color: var(--orange);
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 0.8rem;
+}
+
+@media (min-width: 1025px) {
+  .pageOurSolutions header h2 {
+    font-size: 4.8rem;
+  }
 }
 
 .pageOurSolutions header h3 {
@@ -1769,6 +1781,16 @@ main#app {
 .pageOurSolutions .collapseList li {
   margin-bottom: 1.8rem;
   padding: 1rem 2.6rem 1rem 1rem;
+}
+
+.pageOurSolutions .collapseList li .collapseContent p {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 1025px) {
+  .pageOurSolutions .collapseList li .collapseContent p {
+    font-size: 1.3rem;
+  }
 }
 
 .footer .navFooter {
