@@ -3,7 +3,7 @@
   get_header();
 ?>
 
-<main class="pageInstitucional">
+<main class="pageInstitutional">
   <?php get_template_part('components/headerPage'); ?>
 
   <section class="localization sectionPage">

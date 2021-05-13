@@ -1,0 +1,11 @@
+.pageFrequentlyAskedQuestions {
+  background-color: var(--light-gray);
+
+  .content {
+    margin: 3rem 0;
+
+    @media (min-width: 1025px) {
+      margin: 10rem 0;
+    }
+  }
+}
