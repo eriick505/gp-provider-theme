@@ -256,7 +256,7 @@
     </div>
   </section>
 
-  <section class="services">
+  <section class="services" id="setorAtuacao">
     <div class="container">
       <header class="title bgDetails">
         <span>O que você</span>
@@ -397,7 +397,7 @@
     </div>
   </section>
 
-  <section class="whereWeAre">
+  <section class="whereWeAre" id="ondeEstamos">
     <div class="container">
       <header class="title">
         <span>Saiba onde</span>

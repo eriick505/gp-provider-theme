@@ -13,22 +13,22 @@
               <h5>SOBRE NÓS</h5>
               <ul>
                 <li>
-                  <a href="#" target="_blank" rel="noopener noreferrer"
+                  <a href="<?php echo get_site_url(); ?>/institucional"
                     >Institucional</a
                   >
                 </li>
                 <li>
-                  <a href="#" target="_blank" rel="noopener noreferrer"
+                  <a href="#"
                     >Nossos Conceitos</a
                   >
                 </li>
                 <li>
-                  <a href="#" target="_blank" rel="noopener noreferrer"
+                  <a href="#"
                     >Prêmios e Certificações</a
                   >
                 </li>
                 <li>
-                  <a href="#" target="_blank" rel="noopener noreferrer"
+                  <a href="<?php echo get_site_url(); ?>/#ondeEstamos"
                     >Onde estamos</a
                   >
                 </li>
@@ -38,7 +38,7 @@
             <div class="no-title">
               <ul>
                 <li>
-                  <a href="#" target="_blank" rel="noopener noreferrer"
+                  <a href="<?php echo get_site_url(); ?>/#setorAtuacao"
                     >Setor de Atuação</a
                   >
                 </li>
@@ -59,15 +59,23 @@
               <h5>SERVIÇOS</h5>
               <ul>
                 <li>
-                  <a href="#" target="_blank" rel="noopener noreferrer">BPO</a>
+                  <a href="<?php echo get_site_url(); ?>/nossas-solucoes#bpo">
+                    BPO
+                  </a>
                 </li>
                 <li>
-                  <a href="#" target="_blank" rel="noopener noreferrer"
-                    >Contact Center</a
+                  <a 
+                    href="<?php echo get_site_url(); ?>/nossas-solucoes#contactCenter"
                   >
+                    Contact Center
+                  </a>
                 </li>
                 <li>
-                  <a href="#" target="_blank" rel="noopener noreferrer">TIC</a>
+                  <a 
+                    href="<?php echo get_site_url(); ?>/nossas-solucoes#tic"
+                  >
+                    TIC
+                  </a>
                 </li>
               </ul>
             </div>
