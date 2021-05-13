@@ -216,13 +216,15 @@ img {
   display: -ms-flexbox;
   display: flex;
   font-size: 1.4rem;
-  height: 2rem;
+  height: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin-right: 1.2rem;
   position: relative;
-  width: 2rem;
+  width: 20px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .collapseList li .collapseTitle .icon::before {
@@ -1857,7 +1859,13 @@ main#app {
 }
 
 .pageFrequentlyAskedQuestions .content {
-  margin: 10rem 0;
+  margin: 3rem 0;
+}
+
+@media (min-width: 1025px) {
+  .pageFrequentlyAskedQuestions .content {
+    margin: 10rem 0;
+  }
 }
 
 .footer .navFooter {
