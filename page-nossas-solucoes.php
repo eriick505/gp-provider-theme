@@ -6,7 +6,7 @@
 <main class="pageOurSolutions">
   <?php get_template_part('components/headerPage'); ?>
 
-  <section class="bpo">
+  <section class="bpo" id="bpo">
     <div class="container">
       <header>
         <h2>BPO</h2>
@@ -144,7 +144,7 @@
     </div>
   </section>
 
-  <section class="contactCenter">
+  <section class="contactCenter" id="contactCenter">
     <div class="container">
       <header>
         <h2>CONTACT CENTER</h2>
@@ -261,7 +261,7 @@
     </div>
   </section>
 
-  <section class="tic">
+  <section class="tic" id="tic">
     <div class="container">
       <header>
         <h2>TIC</h2>

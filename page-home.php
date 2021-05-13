@@ -56,7 +56,7 @@
 
       <footer>
         <a
-          href="#"
+          href="<?php echo get_site_url(); ?>/institucional"
           aria-label="Ir para o sobre"
           class="btn btnOrangeGradient"
         >
@@ -266,14 +266,17 @@
       <ul class="listServices">
         <li>
           <article class="box">
-            <a href="#">
+            <a href="<?php echo get_site_url(); ?>/nossas-solucoes#bpo">
               <h5>BPO</h5>
             </a>
             <p>
               Serviço planejado, pensado e personalizado de acordo com a sua
               necessidade, proporcionando alta qualidade na sua operação.
             </p>
-            <a href="#" class="btnServices">
+            <a 
+              href="<?php echo get_site_url(); ?>/nossas-solucoes#bpo" 
+              class="btnServices"
+            >
               <span>Conheça mais</span>
               <svg
                 width="31"
@@ -291,14 +294,19 @@
         </li>
         <li>
           <article class="box">
-            <a href="#">
+            <a 
+              href="<?php echo get_site_url(); ?>/nossas-solucoes#contactCenter"
+            >
               <h5>CONTACT CENTER</h5>
             </a>
             <p>
               Com foco humanizado, temos o prazer em atender bem. Conte com
               serviços planejados sob medida para o seu negócio.
             </p>
-            <a href="#" class="btnServices">
+            <a 
+              href="<?php echo get_site_url(); ?>/nossas-solucoes#contactCenter" 
+              class="btnServices"
+            >
               <span>Conheça mais</span>
               <svg
                 width="31"
@@ -316,14 +324,17 @@
         </li>
         <li>
           <article class="box">
-            <a href="#">
+            <a href="<?php echo get_site_url(); ?>/nossas-solucoes#tic">
               <h5>TIC</h5>
             </a>
             <p>
               Sistemas desenvolvidos para suprir as necessidades de qualquer
               organização, criando, controlando e aperfeiçoando plataformas.
             </p>
-            <a href="#" class="btnServices">
+            <a 
+              href="<?php echo get_site_url(); ?>/nossas-solucoes#tic" 
+              class="btnServices"
+            >
               <span>Conheça mais</span>
               <svg
                 width="31"
