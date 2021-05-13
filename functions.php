@@ -1,12 +1,12 @@
 <?php
 
-// ADICIONA O CSS DO SITE
+// Adiciona o CSS do site
 function add_estilos_css() {
   wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/styles/css/main.min.css');
 }
 add_action('wp_enqueue_scripts', 'add_estilos_css');
 
-// ADICIONA O JAVASCRIPT DO SITE
+// Adiciona o Javascript do siteE
 function add_scripts_js() {
   wp_register_script( 'main-script', get_template_directory_uri() . '/assets/js/scripts.js', array(), false, true );
 
@@ -28,5 +28,67 @@ function title_tag() {
   add_theme_support('title-tag');
 }
 add_action('after_setup_theme', 'title_tag');
+
+// Previnir erro da versão antiga do Título dinâmico
+if (!function_exists('_wp_render_title_tag')){
+  function render_title() { ?>
+      <title><?php wp_title('|', true, 'right'); ?></title>
+<?php }
+  add_action('wp_head', 'render_title');
+}
+
+// Remove a versão do Wordpress
+function wpversion_remove_version() {
+  return '';
+}
+add_filter('the_generator', 'wpversion_remove_version');
+
+// Suporte a imagens destacada
+add_theme_support('post-thumbnails');
+
+// Suporte a Widget
+add_theme_support('widgets');
+add_theme_support('customize-selective-refresh-widgets');
+
+// Customizar o Footer do WordPress
+function remove_footer_admin () {
+  echo 'Desenvolvido com ♥ por - <b>Tuba Agência</b>';
+}
+add_filter('admin_footer_text', 'remove_footer_admin');
+
+//Link na tela de login para a página inicial 
+function my_login_logo_url() {
+  return get_bloginfo( 'url' );
+}
+add_filter( 'login_headerurl', 'my_login_logo_url' );
+
+// Nome do cabeçalho na página de login
+function my_login_logo_url_title() {
+  return 'Grupo Provider';
+}
+add_filter( 'login_headertitle', 'my_login_logo_url_title' );
+
+// Custom WordPress Login Logo
+function my_login_logo() { ?>
+
+  <style>
+    body.login div#login h1 a {
+      background-image: url('<?= get_bloginfo( 'url' ) . '/wp-content/themes/gpprovider/assets/img/logo-footer.png' ?>');
+      background-size: 100%;
+      position: relative;
+      width: 220px;
+    }
+
+    body.login form {
+      color: #fff;
+      background: #ea7613;
+      border: none;
+      box-shadow: 4px 4px 8px 1px rgb(0 0 0 / 35%);
+    }
+  </style>
+
+<?php }
+
+add_action( 'login_enqueue_scripts', 'my_login_logo' );
 
 ?>
