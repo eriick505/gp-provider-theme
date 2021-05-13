@@ -1351,7 +1351,7 @@ main#app {
           transform: scale(0.9);
 }
 
-.pageInstitucional .row {
+.pageInstitutional .row {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -1359,28 +1359,28 @@ main#app {
 }
 
 @media (min-width: 1025px) {
-  .pageInstitucional .row {
+  .pageInstitutional .row {
     -ms-grid-columns: 1fr 55.5rem;
         grid-template-columns: 1fr 55.5rem;
   }
 }
 
 @media (min-width: 1025px) {
-  .pageInstitucional .row.reverse {
+  .pageInstitutional .row.reverse {
     -ms-grid-columns: 55.5rem 1fr;
         grid-template-columns: 55.5rem 1fr;
   }
 }
 
 @media (max-width: 1025px) {
-  .pageInstitucional .row.reverse .title {
+  .pageInstitutional .row.reverse .title {
     -ms-grid-row: 1;
     grid-row: 1;
   }
 }
 
 @media (min-width: 1025px) {
-  .pageInstitucional .row.reverse .title {
+  .pageInstitutional .row.reverse .title {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
@@ -1388,14 +1388,14 @@ main#app {
 }
 
 @media (min-width: 1025px) {
-  .pageInstitucional .row.reverse .content {
+  .pageInstitutional .row.reverse .content {
     padding-left: 0;
     padding-right: 12%;
   }
-  .pageInstitucional .row.reverse .content::before {
+  .pageInstitutional .row.reverse .content::before {
     display: none;
   }
-  .pageInstitucional .row.reverse .content::after {
+  .pageInstitutional .row.reverse .content::after {
     content: "";
     position: absolute;
     right: 0;
@@ -1406,7 +1406,7 @@ main#app {
   }
 }
 
-.pageInstitucional .content {
+.pageInstitutional .content {
   position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1424,19 +1424,19 @@ main#app {
 }
 
 @media (min-width: 1025px) {
-  .pageInstitucional .content {
+  .pageInstitutional .content {
     padding-left: 12%;
   }
 }
 
-.pageInstitucional .content p {
+.pageInstitutional .content p {
   text-align: left;
   font-size: 2rem;
   width: 100%;
 }
 
 @media (min-width: 1025px) {
-  .pageInstitucional .content p {
+  .pageInstitutional .content p {
     text-align: justify;
     font-size: 2.4rem;
     line-height: 3.4rem;
@@ -1444,7 +1444,7 @@ main#app {
 }
 
 @media (min-width: 1025px) {
-  .pageInstitucional .content::before {
+  .pageInstitutional .content::before {
     content: "";
     position: absolute;
     left: 0;
@@ -1455,7 +1455,7 @@ main#app {
   }
 }
 
-.pageInstitucional .title {
+.pageInstitutional .title {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1470,7 +1470,7 @@ main#app {
 }
 
 @media (min-width: 1025px) {
-  .pageInstitucional .title {
+  .pageInstitutional .title {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -1478,38 +1478,38 @@ main#app {
   }
 }
 
-.pageInstitucional .title h3 {
+.pageInstitutional .title h3 {
   font-size: 3.4rem;
   font-weight: 700;
 }
 
 @media (min-width: 769px) {
-  .pageInstitucional .title h3 {
+  .pageInstitutional .title h3 {
     font-size: 6.4rem;
   }
 }
 
-.pageInstitucional .text-right h3 {
+.pageInstitutional .text-right h3 {
   text-align: center;
 }
 
 @media (min-width: 1025px) {
-  .pageInstitucional .text-right h3 {
+  .pageInstitutional .text-right h3 {
     text-align: right;
   }
 }
 
-.pageInstitucional .text-right p {
+.pageInstitutional .text-right p {
   text-align: left;
 }
 
 @media (min-width: 1025px) {
-  .pageInstitucional .text-right p {
+  .pageInstitutional .text-right p {
     text-align: right;
   }
 }
 
-.pageInstitucional .sectionPage {
+.pageInstitutional .sectionPage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1524,24 +1524,24 @@ main#app {
 }
 
 @media (min-width: 1025px) {
-  .pageInstitucional .sectionPage {
+  .pageInstitutional .sectionPage {
     height: 72rem;
   }
 }
 
-.pageInstitucional .localization {
+.pageInstitutional .localization {
   background-image: url("../../img/backgrounds/bg-localizacao.jpg");
 }
 
-.pageInstitucional .people {
+.pageInstitutional .people {
   background-image: url("../../img/backgrounds/bg-pessoas.jpg");
 }
 
-.pageInstitucional .integration {
+.pageInstitutional .integration {
   background-image: url("../../img/backgrounds/bg-integracao.jpg");
 }
 
-.pageInstitucional .niches {
+.pageInstitutional .niches {
   background-image: url("../../img/backgrounds/bg-nichos.jpg");
 }
 
@@ -1850,6 +1850,14 @@ main#app {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
+}
+
+.pageFrequentlyAskedQuestions {
+  background-color: var(--light-gray);
+}
+
+.pageFrequentlyAskedQuestions .content {
+  margin: 10rem 0;
 }
 
 .footer .navFooter {
