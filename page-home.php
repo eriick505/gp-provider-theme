@@ -620,7 +620,12 @@
             </p>
             <ul class="listContact">
               <li>
-                <a href="#" class="btnFaq">ACESSAR FAQ</a>
+                <a 
+                  href="<?php echo get_site_url(); ?>/perguntas-frequentes" 
+                  class="btnFaq"
+                >
+                  ACESSAR FAQ
+                </a>
               </li>
               <li>ou</li>
               <li>
