@@ -50,6 +50,25 @@ add_theme_support('post-thumbnails');
 add_theme_support('widgets');
 add_theme_support('customize-selective-refresh-widgets');
 
+// Custom Post Types 
+function create_posts_types() {
+  register_post_type('lista-clientes',
+    array(
+        'labels' => array(
+          'name' => __('Lista de Clientes'),
+          'singular_name' => __('Cliente'),
+        ),
+        'supports' => array(
+          'title', 'thumbnail',
+        ),
+        'public' => true, 
+        'has_archive' => true,
+        'menu_icon' => 'dashicons-groups',
+        'rewrite' => array('slug' => 'lista-clientes'),
+    ));
+}
+add_action('init', 'create_posts_types');
+
 // Customizar o Footer do WordPress
 function remove_footer_admin () {
   echo 'Desenvolvido com ♥ por - <b>Tuba Agência</b>';
