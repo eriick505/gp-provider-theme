@@ -9,52 +9,48 @@
   <section class="content">
     <div class="container">
       <ul class="collapseList" data-js="collapseList">
+
+        <?php 
+          $my_args_depo = array(
+            'post_type' => 'faq',
+            'posts_per_page' => -1,
+            'order' => 'asc',
+          );
+
+          $my_query_depo = new WP_Query($my_args_depo);
+          
+          if($my_query_depo->have_posts()) : 
+          $count = 0;
+          while($my_query_depo->have_posts()) : $my_query_depo->the_post();
+          
+          $count++;
+          $post_id = get_the_ID();
+        ?>
+
         <li>
           <a
             href="#"
             aria-expanded="false"
             type="button"
-            data-target="#pergunta1"
+            data-target="<?= '#faq' . $post_id ?>"
             class="collapseTitle"
           >
-            <span class="icon active"></span>
-            <span> 1 - Como entro em contato? </span>
+            <span class="icon <?= $count === 1 ? 'active' : '' ?>"></span>
+            <span><?php the_title(); ?></span>
           </a>
 
           <div 
-            class="collapseContent active" 
-            id="pergunta1"
+            class="collapseContent <?= $count === 1 ? 'active' : '' ?>" 
+            id="<?= 'faq' . $post_id ?>"
           >
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, 
-              sapiente. Sint accusantium minus atque dolore non assumenda 
-              reprehenderit fuga dolor?
-            </p>
+            <?php the_content(); ?>
           </div>
         </li>
-        <li>
-          <a
-            href="#"
-            aria-expanded="false"
-            type="button"
-            data-target="#pergunta2"
-            class="collapseTitle"
-          >
-            <span class="icon"></span>
-            <span> 2 - Quantas vezes posso entrar em contato? </span>
-          </a>
 
-          <div 
-            class="collapseContent" 
-            id="pergunta2"
-          >
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, 
-              sapiente. Sint accusantium minus atque dolore non assumenda 
-              reprehenderit fuga dolor?
-            </p>
-          </div>
-        </li>
+        <?php endwhile; endif; ?>
+        <?php wp_reset_query(); ?>
+
+        
       </ul>
     </div>
   </section>
