@@ -1868,6 +1868,12 @@ main#app {
   }
 }
 
+@media (min-width: 1025px) {
+  .pageFrequentlyAskedQuestions .content .collapseList li .collapseContent p {
+    font-size: 1.6rem;
+  }
+}
+
 .footer .navFooter {
   background-color: #f3f3f3;
   padding: 2rem 0;
