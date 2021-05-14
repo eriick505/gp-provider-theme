@@ -66,6 +66,21 @@ function create_posts_types() {
         'menu_icon' => 'dashicons-groups',
         'rewrite' => array('slug' => 'lista-clientes'),
     ));
+  
+  register_post_type('faq',
+    array(
+        'labels' => array(
+          'name' => __('Perguntas Frequentes'),
+          'singular_name' => __('Pergunta'),
+        ),
+        'supports' => array(
+          'title', 'editor'
+        ),
+        'public' => true, 
+        'has_archive' => true,
+        'menu_icon' => 'dashicons-format-chat',
+        'rewrite' => array('slug' => 'faq'),
+    ));
 }
 add_action('init', 'create_posts_types');
 
