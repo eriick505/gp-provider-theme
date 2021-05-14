@@ -7,5 +7,11 @@
     @media (min-width: 1025px) {
       margin: 10rem 0;
     }
+
+    @media (min-width: 1025px) {
+      .collapseList li .collapseContent p {
+        font-size: 1.6rem;
+      }
+    }
   }
 }
