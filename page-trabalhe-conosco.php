@@ -9,11 +9,12 @@
   <section class="wrapper">
     <div class="content">
       <div class="infoContent">
-        <h2>Junte-se a nós!</h2>
-        <p>A nossa cultura é trabalhar sempre em cooperação com a nossa equipe. 
-        Acreditamos que investir nos colaboradores é trazer ainda mais qualidade 
-        aos nosso negócios e produtos. Por isso, estamos sempre em busca de novos 
-        talentos dispostos a dividir esse grande sonho com a gente.</p>
+        <?= get_field('titulo_do_conteudo') ? 
+          '<h2>'. get_field('titulo_do_conteudo') .'</h2>' : '' 
+        ?>
+        <?= get_field('conteudo') ? 
+          get_field('conteudo') : '' 
+        ?>
       </div>
       <div class="form">
         <h3>Cadastre seu currículo</h3>

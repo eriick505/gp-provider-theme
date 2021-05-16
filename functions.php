@@ -107,7 +107,7 @@ function my_login_logo() { ?>
 
   <style>
     body.login div#login h1 a {
-      background-image: url('<?= get_bloginfo( 'url' ) . '/wp-content/themes/gpprovider/assets/img/logo-footer.png' ?>');
+      background-image: url('<?= get_bloginfo( 'url' ) . '/wp-content/themes/gp-provider-theme/assets/img/logo-footer.png' ?>');
       background-size: 100%;
       position: relative;
       width: 220px;
