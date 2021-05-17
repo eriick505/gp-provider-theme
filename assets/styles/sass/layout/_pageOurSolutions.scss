@@ -7,6 +7,14 @@
     }
   }
 
+  section:last-child {
+    margin-bottom: 3.8rem;
+
+    @media (min-width: 1025px) {
+      margin-bottom: 7.8rem;
+    }
+  }
+
   header {
     h2 {
       font-size: 4rem;

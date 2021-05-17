@@ -65,7 +65,7 @@
                 </li>
                 <li>
                   <a 
-                    href="<?php echo get_site_url(); ?>/nossas-solucoes#contactCenter"
+                    href="<?php echo get_site_url(); ?>/nossas-solucoes#contact-center"
                   >
                     Contact Center
                   </a>
