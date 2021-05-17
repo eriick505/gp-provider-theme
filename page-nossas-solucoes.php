@@ -29,9 +29,12 @@
   <?php
     if(have_rows('nossas_solucoes')) :
       while(have_rows('nossas_solucoes')) : the_row();
+
+      $titleSection = get_sub_field('titulo');
+      $titleSectionSlugify = slugify($titleSection);
   ?>
 
-  <section class="bpo" id="bpo">
+  <section id="<?= $titleSectionSlugify; ?>">
     <div class="container">
       <header>
         <h2><?php the_sub_field('titulo'); ?></h2>
@@ -50,7 +53,7 @@
             $count++;
 
             $titleTopics = 'topic-' . get_sub_field('titulo_do_topico');
-            $titleSlugify = slugify($titleTopics);
+            $titleTopicSlugify = slugify($titleTopics);
           ?>
         
             <li>
@@ -58,7 +61,7 @@
                 href="#"
                 aria-expanded="false"
                 type="button"
-                data-target="#<?= $titleSlugify; ?>"
+                data-target="#<?= $titleTopicSlugify; ?>"
                 class="collapseTitle"
               >
                 <span class="icon <?= $count === 1 ? 'active' : '' ?>"></span>
@@ -67,7 +70,7 @@
     
               <div 
                 class="collapseContent <?= $count === 1 ? 'active' : '' ?>" 
-                id="<?= $titleSlugify; ?>"
+                id="<?= $titleTopicSlugify; ?>"
               >
                 <?php the_sub_field('descricao_do_topico'); ?>
               </div>
