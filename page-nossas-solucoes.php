@@ -43,7 +43,9 @@
       </header>
 
       <div class="content">
-        <img src="<?php bloginfo('template_url'); ?>/assets/img/sections/bpo-solucoes.jpg" alt="Imagem referente ao serviço BPO">
+        <?php if( get_sub_field('imagem_do_servico') ): ?>
+          <img src="<?php the_sub_field('imagem_do_servico'); ?>" alt="Imagem referente ao serviço <?= the_sub_field('titulo'); ?>" />
+        <?php endif; ?>
 
         <?php if(have_rows('topicos_dos_servicos')) : ?>
           <ul class="collapseList" data-js="collapseList">
