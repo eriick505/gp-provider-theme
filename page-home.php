@@ -89,14 +89,9 @@
         <h2 class="title">PROPÓSITO</h2>
       </header>
 
-      <p>
-        Somos movidos pelo desafio de prover diariamente novas oportunidades
-        aos nossos diversos públicos.
-      </p>
-      <p>
-        Valorizamos e desenvolvemos as relações humanas, buscando atingir o
-        nosso compromisso em oferecer serviços de qualidade.
-      </p>
+      <?= get_field('descricao_nosso_proposito') ? 
+        get_field('descricao_nosso_proposito') : '' 
+      ?>
 
       <div class="purposeList">
         <article>
