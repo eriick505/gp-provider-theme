@@ -493,7 +493,6 @@ main#app {
 .hero {
   align-items: center;
   background-color: var(--blue-700);
-  background-image: url(../../img/backgrounds/hero-main-home.jpg);
   background-position: -155px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -534,7 +533,8 @@ main#app {
   }
 }
 
-.hero h1 span {
+.hero h1 span,
+.hero h1 b {
   font-weight: 700;
 }
 
@@ -653,6 +653,7 @@ main#app {
 @media (min-width: 769px) {
   .purpose .purposeList article {
     flex-direction: row;
+    justify-content: flex-start;
   }
 }
 
@@ -710,18 +711,6 @@ main#app {
   .services .listServices {
     grid-template-columns: repeat(3, 1fr);
   }
-}
-
-.services .listServices li:nth-child(1) .box {
-  background-image: url("../../img/sections/bpo.jpg");
-}
-
-.services .listServices li:nth-child(2) .box {
-  background-image: url("../../img/sections/contact-center.jpg");
-}
-
-.services .listServices li:nth-child(3) .box {
-  background-image: url("../../img/sections/tic.jpg");
 }
 
 .services .listServices .box {

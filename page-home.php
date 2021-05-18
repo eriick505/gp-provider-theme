@@ -4,19 +4,39 @@
 ?>
 
 <main id="app">
-  <section class="hero">
+  <section 
+    class="hero" 
+    style="background-image: url('<?= get_field('imagem_do_banner_inicial') ? 
+    the_field('imagem_do_banner_inicial') : 
+    '' ?>');"
+  >
     <div class="container">
       <header>
         <h1>
-          Há <span>25 anos</span> sendo uma solução próxima, proativa e
-          <span>Provider</span> para a sua empresa.
+          <?= get_field('texto_do_banner_inicial') ? 
+            get_field('texto_do_banner_inicial') : '' 
+          ?>
         </h1>
-        <a
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn btnOrangeGradient"
-        >
+
+        <?php 
+          $link = get_field('link_do_botao_do_banner');
+
+          if($link) {
+            $link_url = $link['url'];
+            $link_target = $link['target'] ? $link['target'] : '_self';
+        ?>
+          <a 
+            href="<?php echo esc_url( $link_url ); ?>" 
+            target="<?php echo esc_attr( $link_target ); ?>" 
+            rel="noopener noreferrer"
+            class="btn btnOrangeGradient"
+          >
+        <?php } else { ?>
+          <a 
+            href="#" 
+            class="btn btnOrangeGradient"
+          >
+        <?php } ?>
           Solicite contato comercial
         </a>
       </header>
@@ -31,35 +51,31 @@
       </header>
 
       <div>
-        <p>
-          Fundada em 1996, o Grupo Provider nasceu para proporcionar uma
-          nova experiência de negócios aos seus clientes, oferecendo
-          serviços personalizados de acordo com as necessidades de cada
-          empresa.
-        </p>
-        <p>
-          Contamos com aproximadamente 5 mil colaboradores, mais de 50
-          clientes em nosso portfólio, atuando nas áreas de Aviação, Bens de
-          Consumo, Saúde Ambiental, Educação, Finanças, Jurídico, Saúde,
-          Seguros, Transporte, Telecomunicações, Utilities, Varejo e Órgãos
-          Públicos.
-        </p>
-        <p>
-          O Grupo Provider se destaca como fornecedor de excelência,
-          primando pelo relacionamento e qualidade nos serviços, no
-          desenvolvimento de recursos inovadores de gestão e operação de
-          Contact Center, BPO (Business Process Outsourcing), integrando e
-          customizando soluções em TIC (Tecnologia de Informação e
-          Comunicação).
-        </p>
+        <?= get_field('descricao_nossa_trajetoria') ? 
+          get_field('descricao_nossa_trajetoria') : '' 
+        ?>
       </div>
 
       <footer>
-        <a
-          href="<?php echo get_site_url(); ?>/institucional"
-          aria-label="Ir para o sobre"
-          class="btn btnOrangeGradient"
-        >
+        <?php 
+          $link = get_field('link_do_botao_da_nossa_trajetoria');
+
+          if($link) {
+            $link_url = $link['url'];
+            $link_target = $link['target'] ? $link['target'] : '_self';
+        ?>
+          <a 
+            href="<?php echo esc_url( $link_url ); ?>" 
+            target="<?php echo esc_attr( $link_target ); ?>" 
+            rel="noopener noreferrer"
+            class="btn btnOrangeGradient"
+          >
+        <?php } else { ?>
+          <a 
+            href="#" 
+            class="btn btnOrangeGradient"
+          >
+        <?php } ?>
           Conheça mais
         </a>
       </footer>
@@ -73,14 +89,9 @@
         <h2 class="title">PROPÓSITO</h2>
       </header>
 
-      <p>
-        Somos movidos pelo desafio de prover diariamente novas oportunidades
-        aos nossos diversos públicos.
-      </p>
-      <p>
-        Valorizamos e desenvolvemos as relações humanas, buscando atingir o
-        nosso compromisso em oferecer serviços de qualidade.
-      </p>
+      <?= get_field('descricao_nosso_proposito') ? 
+        get_field('descricao_nosso_proposito') : '' 
+      ?>
 
       <div class="purposeList">
         <article>
@@ -263,20 +274,43 @@
         <h2>PRECISA?</h2>
       </header>
 
-      <ul class="listServices">
+      <?php if(have_rows('servicos_que_voce_precisa')) : ?>
+        <ul class="listServices">
+      <?php while(have_rows('servicos_que_voce_precisa')) : the_row(); ?>
+
         <li>
-          <article class="box">
+          <article 
+            class="box" 
+            style="background-image: url('<?= get_sub_field('imagem_background') ? 
+            the_sub_field('imagem_background') : 
+            '' ?>');"
+          >
+
             <a href="<?php echo get_site_url(); ?>/nossas-solucoes#bpo">
-              <h5>BPO</h5>
+              <h5><?php the_sub_field('titulo_do_servico'); ?></h5>
             </a>
-            <p>
-              Serviço planejado, pensado e personalizado de acordo com a sua
-              necessidade, proporcionando alta qualidade na sua operação.
-            </p>
-            <a 
-              href="<?php echo get_site_url(); ?>/nossas-solucoes#bpo" 
-              class="btnServices"
-            >
+
+            <?php the_sub_field('descricao_do_servico'); ?>
+
+            <?php 
+              $link = get_sub_field('link_do_servico');
+
+              if($link) {
+                $link_url = $link['url'];
+                $link_target = $link['target'] ? $link['target'] : '_self';
+            ?>
+              <a 
+                href="<?php echo esc_url( $link_url ); ?>" 
+                target="<?php echo esc_attr( $link_target ); ?>" 
+                rel="noopener noreferrer"
+                class="btnServices"
+              >
+            <?php } else { ?>
+              <a 
+                href="#" 
+                class="btnServices"
+              >
+            <?php } ?>
               <span>Conheça mais</span>
               <svg
                 width="31"
@@ -292,65 +326,10 @@
             </a>
           </article>
         </li>
-        <li>
-          <article class="box">
-            <a 
-              href="<?php echo get_site_url(); ?>/nossas-solucoes#contactCenter"
-            >
-              <h5>CONTACT CENTER</h5>
-            </a>
-            <p>
-              Com foco humanizado, temos o prazer em atender bem. Conte com
-              serviços planejados sob medida para o seu negócio.
-            </p>
-            <a 
-              href="<?php echo get_site_url(); ?>/nossas-solucoes#contactCenter" 
-              class="btnServices"
-            >
-              <span>Conheça mais</span>
-              <svg
-                width="31"
-                height="24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12.83 6l-1.75 1.41L16.76 12l-5.68 4.59L12.83 18l7.44-6-7.44-6z"
-                  fill="#fff"
-                />
-              </svg>
-            </a>
-          </article>
-        </li>
-        <li>
-          <article class="box">
-            <a href="<?php echo get_site_url(); ?>/nossas-solucoes#tic">
-              <h5>TIC</h5>
-            </a>
-            <p>
-              Sistemas desenvolvidos para suprir as necessidades de qualquer
-              organização, criando, controlando e aperfeiçoando plataformas.
-            </p>
-            <a 
-              href="<?php echo get_site_url(); ?>/nossas-solucoes#tic" 
-              class="btnServices"
-            >
-              <span>Conheça mais</span>
-              <svg
-                width="31"
-                height="24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12.83 6l-1.75 1.41L16.76 12l-5.68 4.59L12.83 18l7.44-6-7.44-6z"
-                  fill="#fff"
-                />
-              </svg>
-            </a>
-          </article>
-        </li>
-      </ul>
+
+      <?php endwhile; ?> 
+        </ul>
+      <?php endif; ?>
 
       <div class="whereWeOperate">
         <div>
@@ -369,11 +348,9 @@
             </h3>
           </header>
 
-          <p>
-            O Grupo Provider possui experiência comprovada tanto no setor
-            público quanto no privado, e se destaca como fornecedor de
-            excelência em produtos e serviços nas seguintes áreas.
-          </p>
+          <?= get_field('descricao_onde_atuamos') ? 
+            get_field('descricao_onde_atuamos') : '' 
+          ?>
         </div>
         <div>
           <ul class="listLocation">
@@ -406,149 +383,43 @@
 
       <div class="row">
         <div>
-          <ul class="collapseList" data-js="collapseList">
-            <li>
-              <a
-                href="#"
-                aria-expanded="false"
-                type="button"
-                data-target="#pernambucoCollapse"
-                class="collapseTitle"
-              >
-                <span class="icon active"></span>
-                <span> Pernambuco </span>
-              </a>
+          <?php 
+            if(have_rows('locais_onde_a_empresa_se_encontra')) : 
+            $count = 0; 
+          ?>
+            <ul class="collapseList" data-js="collapseList">
+          <?php 
+            while(have_rows('locais_onde_a_empresa_se_encontra')) : 
+            the_row(); 
+            $count++; 
 
-              <div class="collapseContent active" id="pernambucoCollapse">
-                <p>
-                  <b>Recife:</b> Rua Dois de Julho, 80 - Bairro Santo Amaro
-                  - CEP: 50.040-180 Contato: +55 (81) 2122-2122 - CNPJ:
-                  01.159.435/0001-46
-                </p>
-                <p>
-                  <b>Caruaru:</b> Rod BR 104, KM 62, S/N - Bairro Nova
-                  Caruaru - CEP: 55.002-971 Contato: +55 81 3727-7650/5420 -
-                  CNPJ: 01.159.435/0005-70
-                </p>
-              </div>
-            </li>
-            <li>
-              <a
-                href="#"
-                aria-expanded="false"
-                type="button"
-                data-target="#saoPauloCollapse"
-                class="collapseTitle"
-              >
-                <span class="icon"></span>
-                <span> São Paulo </span>
-              </a>
+            $titleLocal = 'local-' . get_sub_field('titulo_do_local');
+            $titleLocalSlugify = slugify($titleLocal);
+          ?>
 
-              <div class="collapseContent" id="saoPauloCollapse">
-                <p>
-                  <b>Recife:</b> Rua Dois de Julho, 80 - Bairro Santo Amaro
-                  - CEP: 50.040-180 Contato: +55 (81) 2122-2122 - CNPJ:
-                  01.159.435/0001-46
-                </p>
-                <p>
-                  <b>Caruaru:</b> Rod BR 104, KM 62, S/N - Bairro Nova
-                  Caruaru - CEP: 55.002-971 Contato: +55 81 3727-7650/5420 -
-                  CNPJ: 01.159.435/0005-70
-                </p>
-              </div>
-            </li>
-            <li>
-              <a
-                href="#"
-                aria-expanded="false"
-                type="button"
-                data-target="#rioDeJaneiroCollapse"
-                class="collapseTitle"
-              >
-                <span class="icon"></span>
-                <span>Rio de Janeiro</span>
-              </a>
+              <li>
+                <a
+                  href="#"
+                  aria-expanded="false"
+                  type="button"
+                  data-target="#<?= $titleLocalSlugify; ?>"
+                  class="collapseTitle"
+                >
+                  <span class="icon <?= $count === 1 ? 'active' : '' ?>"></span>
+                  <span> <?php the_sub_field('titulo_do_local'); ?> </span>
+                </a>
 
-              <div class="collapseContent" id="rioDeJaneiroCollapse">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Voluptatibus quidem aspernatur quisquam dolore
-                  perspiciatis praesentium consequuntur numquam laboriosam,
-                  ut minima aperiam delectus totam pariatur sint suscipit
-                  reiciendis voluptatum. Vel, quis.
-                </p>
-                <p>
-                  <b>Caruaru:</b> Rod BR 104, KM 62, S/N - Bairro Nova
-                  Caruaru - CEP: 55.002-971 Contato: +55 81 3727-7650/5420 -
-                  CNPJ: 01.159.435/0005-70
-                </p>
-              </div>
-            </li>
-            <li>
-              <a
-                href="#"
-                aria-expanded="false"
-                type="button"
-                data-target="#paraibaCollapse"
-                class="collapseTitle"
-              >
-                <span class="icon"></span>
-                <span>Paraíba</span>
-              </a>
+                <div 
+                  class="collapseContent <?= $count === 1 ? 'active' : '' ?>" 
+                  id="<?= $titleLocalSlugify; ?>"
+                >
+                  <?php the_sub_field('descricao_do_local'); ?>
+                </div>
+              </li>
 
-              <div class="collapseContent" id="paraibaCollapse">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Voluptatibus quidem aspernatur quisquam dolore
-                  perspiciatis praesentium consequuntur numquam laboriosam,
-                  ut minima aperiam delectus totam pariatur sint suscipit
-                  reiciendis voluptatum. Vel, quis.
-                </p>
-              </div>
-            </li>
-            <li>
-              <a
-                href="#"
-                aria-expanded="false"
-                type="button"
-                data-target="#sergipeCollapse"
-                class="collapseTitle"
-              >
-                <span class="icon"></span>
-                <span>Sergipe</span>
-              </a>
-
-              <div class="collapseContent" id="sergipeCollapse">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Voluptatibus quidem aspernatur quisquam dolore
-                  perspiciatis praesentium consequuntur numquam laboriosam,
-                  ut minima aperiam delectus totam pariatur sint suscipit
-                  reiciendis voluptatum. Vel, quis.
-                </p>
-              </div>
-            </li>
-            <li>
-              <a
-                href="#"
-                aria-expanded="false"
-                type="button"
-                data-target="#minasGeraisCollapse"
-                class="collapseTitle"
-              >
-                <span class="icon"></span>
-                <span>Minas Gerais</span>
-              </a>
-
-              <div class="collapseContent" id="minasGeraisCollapse">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Voluptatibus quidem aspernatur quisquam dolore
-                  perspiciatis praesentium consequuntur numquam laboriosam.
-                </p>
-              </div>
-            </li>
-          </ul>
+          <?php endwhile; ?> 
+            </ul>
+          <?php endif; ?>
         </div>
 
         <div class="map">
@@ -570,29 +441,22 @@
     </div>
 
     <div class="containerExpanded">
-      <ul class="content">
-        <li>
-          <img
-            src="<?php bloginfo('template_url'); ?>/assets/img/clients/energisa.png"
-            alt="logo da energisa"
-          />
-        </li>
-        <li>
-          <img src="<?php bloginfo('template_url'); ?>/assets/img/clients/inss.png" alt="logo do inss" />
-        </li>
-        <li>
-          <img src="<?php bloginfo('template_url'); ?>/assets/img/clients/edp.png" alt="logo da edp" />
-        </li>
-        <li>
-          <img src="<?php bloginfo('template_url'); ?>/assets/img/clients/elektro.png" alt="logo da elektro" />
-        </li>
-        <li>
-          <img
-            src="<?php bloginfo('template_url'); ?>/assets/img/clients/secretaria-saude.png"
-            alt="logo da secretaria de saúde"
-          />
-        </li>
-      </ul>
+      <?php 
+        $images = get_field('lista_de_clientes');
+
+        if( $images ): 
+      ?>
+          <ul class="content">
+            <?php foreach( $images as $image ): ?>
+              <li>
+                <img 
+                  src="<?php echo esc_url($image['sizes']['large']); ?>" 
+                  alt="<?php echo esc_attr($image['alt']); ?>" 
+                />
+              </li>
+            <?php endforeach; ?>
+          </ul>
+      <?php endif; ?>
     </div>
 
     <div class="container">
