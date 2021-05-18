@@ -274,20 +274,43 @@
         <h2>PRECISA?</h2>
       </header>
 
-      <ul class="listServices">
+      <?php if(have_rows('servicos_que_voce_precisa')) : ?>
+        <ul class="listServices">
+      <?php while(have_rows('servicos_que_voce_precisa')) : the_row(); ?>
+
         <li>
-          <article class="box">
+          <article 
+            class="box" 
+            style="background-image: url('<?= get_sub_field('imagem_background') ? 
+            the_sub_field('imagem_background') : 
+            '' ?>');"
+          >
+
             <a href="<?php echo get_site_url(); ?>/nossas-solucoes#bpo">
-              <h5>BPO</h5>
+              <h5><?php the_sub_field('titulo_do_servico'); ?></h5>
             </a>
-            <p>
-              Serviço planejado, pensado e personalizado de acordo com a sua
-              necessidade, proporcionando alta qualidade na sua operação.
-            </p>
-            <a 
-              href="<?php echo get_site_url(); ?>/nossas-solucoes#bpo" 
-              class="btnServices"
-            >
+
+            <?php the_sub_field('descricao_do_servico'); ?>
+
+            <?php 
+              $link = get_sub_field('link_do_servico');
+
+              if($link) {
+                $link_url = $link['url'];
+                $link_target = $link['target'] ? $link['target'] : '_self';
+            ?>
+              <a 
+                href="<?php echo esc_url( $link_url ); ?>" 
+                target="<?php echo esc_attr( $link_target ); ?>" 
+                rel="noopener noreferrer"
+                class="btnServices"
+              >
+            <?php } else { ?>
+              <a 
+                href="#" 
+                class="btnServices"
+              >
+            <?php } ?>
               <span>Conheça mais</span>
               <svg
                 width="31"
@@ -303,65 +326,10 @@
             </a>
           </article>
         </li>
-        <li>
-          <article class="box">
-            <a 
-              href="<?php echo get_site_url(); ?>/nossas-solucoes#contactCenter"
-            >
-              <h5>CONTACT CENTER</h5>
-            </a>
-            <p>
-              Com foco humanizado, temos o prazer em atender bem. Conte com
-              serviços planejados sob medida para o seu negócio.
-            </p>
-            <a 
-              href="<?php echo get_site_url(); ?>/nossas-solucoes#contactCenter" 
-              class="btnServices"
-            >
-              <span>Conheça mais</span>
-              <svg
-                width="31"
-                height="24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12.83 6l-1.75 1.41L16.76 12l-5.68 4.59L12.83 18l7.44-6-7.44-6z"
-                  fill="#fff"
-                />
-              </svg>
-            </a>
-          </article>
-        </li>
-        <li>
-          <article class="box">
-            <a href="<?php echo get_site_url(); ?>/nossas-solucoes#tic">
-              <h5>TIC</h5>
-            </a>
-            <p>
-              Sistemas desenvolvidos para suprir as necessidades de qualquer
-              organização, criando, controlando e aperfeiçoando plataformas.
-            </p>
-            <a 
-              href="<?php echo get_site_url(); ?>/nossas-solucoes#tic" 
-              class="btnServices"
-            >
-              <span>Conheça mais</span>
-              <svg
-                width="31"
-                height="24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12.83 6l-1.75 1.41L16.76 12l-5.68 4.59L12.83 18l7.44-6-7.44-6z"
-                  fill="#fff"
-                />
-              </svg>
-            </a>
-          </article>
-        </li>
-      </ul>
+
+      <?php endwhile; ?> 
+        </ul>
+      <?php endif; ?>
 
       <div class="whereWeOperate">
         <div>
@@ -380,11 +348,9 @@
             </h3>
           </header>
 
-          <p>
-            O Grupo Provider possui experiência comprovada tanto no setor
-            público quanto no privado, e se destaca como fornecedor de
-            excelência em produtos e serviços nas seguintes áreas.
-          </p>
+          <?= get_field('descricao_onde_atuamos') ? 
+            get_field('descricao_onde_atuamos') : '' 
+          ?>
         </div>
         <div>
           <ul class="listLocation">

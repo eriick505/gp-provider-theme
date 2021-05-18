@@ -713,18 +713,6 @@ main#app {
   }
 }
 
-.services .listServices li:nth-child(1) .box {
-  background-image: url("../../img/sections/bpo.jpg");
-}
-
-.services .listServices li:nth-child(2) .box {
-  background-image: url("../../img/sections/contact-center.jpg");
-}
-
-.services .listServices li:nth-child(3) .box {
-  background-image: url("../../img/sections/tic.jpg");
-}
-
 .services .listServices .box {
   background-size: cover;
   background-position: center;
