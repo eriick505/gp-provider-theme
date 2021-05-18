@@ -441,29 +441,22 @@
     </div>
 
     <div class="containerExpanded">
-      <ul class="content">
-        <li>
-          <img
-            src="<?php bloginfo('template_url'); ?>/assets/img/clients/energisa.png"
-            alt="logo da energisa"
-          />
-        </li>
-        <li>
-          <img src="<?php bloginfo('template_url'); ?>/assets/img/clients/inss.png" alt="logo do inss" />
-        </li>
-        <li>
-          <img src="<?php bloginfo('template_url'); ?>/assets/img/clients/edp.png" alt="logo da edp" />
-        </li>
-        <li>
-          <img src="<?php bloginfo('template_url'); ?>/assets/img/clients/elektro.png" alt="logo da elektro" />
-        </li>
-        <li>
-          <img
-            src="<?php bloginfo('template_url'); ?>/assets/img/clients/secretaria-saude.png"
-            alt="logo da secretaria de saúde"
-          />
-        </li>
-      </ul>
+      <?php 
+        $images = get_field('lista_de_clientes');
+
+        if( $images ): 
+      ?>
+          <ul class="content">
+            <?php foreach( $images as $image ): ?>
+              <li>
+                <img 
+                  src="<?php echo esc_url($image['sizes']['large']); ?>" 
+                  alt="<?php echo esc_attr($image['alt']); ?>" 
+                />
+              </li>
+            <?php endforeach; ?>
+          </ul>
+      <?php endif; ?>
     </div>
 
     <div class="container">
