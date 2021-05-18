@@ -37,8 +37,8 @@
             class="btn btnOrangeGradient"
           >
         <?php } ?>
-            Solicite contato comercial
-          </a>
+          Solicite contato comercial
+        </a>
       </header>
     </div>
   </section>
@@ -51,35 +51,31 @@
       </header>
 
       <div>
-        <p>
-          Fundada em 1996, o Grupo Provider nasceu para proporcionar uma
-          nova experiência de negócios aos seus clientes, oferecendo
-          serviços personalizados de acordo com as necessidades de cada
-          empresa.
-        </p>
-        <p>
-          Contamos com aproximadamente 5 mil colaboradores, mais de 50
-          clientes em nosso portfólio, atuando nas áreas de Aviação, Bens de
-          Consumo, Saúde Ambiental, Educação, Finanças, Jurídico, Saúde,
-          Seguros, Transporte, Telecomunicações, Utilities, Varejo e Órgãos
-          Públicos.
-        </p>
-        <p>
-          O Grupo Provider se destaca como fornecedor de excelência,
-          primando pelo relacionamento e qualidade nos serviços, no
-          desenvolvimento de recursos inovadores de gestão e operação de
-          Contact Center, BPO (Business Process Outsourcing), integrando e
-          customizando soluções em TIC (Tecnologia de Informação e
-          Comunicação).
-        </p>
+        <?= get_field('descricao_nossa_trajetoria') ? 
+          get_field('descricao_nossa_trajetoria') : '' 
+        ?>
       </div>
 
       <footer>
-        <a
-          href="<?php echo get_site_url(); ?>/institucional"
-          aria-label="Ir para o sobre"
-          class="btn btnOrangeGradient"
-        >
+        <?php 
+          $link = get_field('link_do_botao_da_nossa_trajetoria');
+
+          if($link) {
+            $link_url = $link['url'];
+            $link_target = $link['target'] ? $link['target'] : '_self';
+        ?>
+          <a 
+            href="<?php echo esc_url( $link_url ); ?>" 
+            target="<?php echo esc_attr( $link_target ); ?>" 
+            rel="noopener noreferrer"
+            class="btn btnOrangeGradient"
+          >
+        <?php } else { ?>
+          <a 
+            href="#" 
+            class="btn btnOrangeGradient"
+          >
+        <?php } ?>
           Conheça mais
         </a>
       </footer>
