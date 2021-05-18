@@ -4,21 +4,41 @@
 ?>
 
 <main id="app">
-  <section class="hero">
+  <section 
+    class="hero" 
+    style="background-image: url('<?= get_field('imagem_do_banner_inicial') ? 
+    the_field('imagem_do_banner_inicial') : 
+    '' ?>');"
+  >
     <div class="container">
       <header>
         <h1>
-          Há <span>25 anos</span> sendo uma solução próxima, proativa e
-          <span>Provider</span> para a sua empresa.
+          <?= get_field('texto_do_banner_inicial') ? 
+            get_field('texto_do_banner_inicial') : '' 
+          ?>
         </h1>
-        <a
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn btnOrangeGradient"
-        >
-          Solicite contato comercial
-        </a>
+
+        <?php 
+          $link = get_field('link_do_botao_do_banner');
+
+          if($link) {
+            $link_url = $link['url'];
+            $link_target = $link['target'] ? $link['target'] : '_self';
+        ?>
+          <a 
+            href="<?php echo esc_url( $link_url ); ?>" 
+            target="<?php echo esc_attr( $link_target ); ?>" 
+            rel="noopener noreferrer"
+            class="btn btnOrangeGradient"
+          >
+        <?php } else { ?>
+          <a 
+            href="#" 
+            class="btn btnOrangeGradient"
+          >
+        <?php } ?>
+            Solicite contato comercial
+          </a>
       </header>
     </div>
   </section>
