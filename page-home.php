@@ -383,149 +383,43 @@
 
       <div class="row">
         <div>
-          <ul class="collapseList" data-js="collapseList">
-            <li>
-              <a
-                href="#"
-                aria-expanded="false"
-                type="button"
-                data-target="#pernambucoCollapse"
-                class="collapseTitle"
-              >
-                <span class="icon active"></span>
-                <span> Pernambuco </span>
-              </a>
+          <?php 
+            if(have_rows('locais_onde_a_empresa_se_encontra')) : 
+            $count = 0; 
+          ?>
+            <ul class="collapseList" data-js="collapseList">
+          <?php 
+            while(have_rows('locais_onde_a_empresa_se_encontra')) : 
+            the_row(); 
+            $count++; 
 
-              <div class="collapseContent active" id="pernambucoCollapse">
-                <p>
-                  <b>Recife:</b> Rua Dois de Julho, 80 - Bairro Santo Amaro
-                  - CEP: 50.040-180 Contato: +55 (81) 2122-2122 - CNPJ:
-                  01.159.435/0001-46
-                </p>
-                <p>
-                  <b>Caruaru:</b> Rod BR 104, KM 62, S/N - Bairro Nova
-                  Caruaru - CEP: 55.002-971 Contato: +55 81 3727-7650/5420 -
-                  CNPJ: 01.159.435/0005-70
-                </p>
-              </div>
-            </li>
-            <li>
-              <a
-                href="#"
-                aria-expanded="false"
-                type="button"
-                data-target="#saoPauloCollapse"
-                class="collapseTitle"
-              >
-                <span class="icon"></span>
-                <span> São Paulo </span>
-              </a>
+            $titleLocal = 'local-' . get_sub_field('titulo_do_local');
+            $titleLocalSlugify = slugify($titleLocal);
+          ?>
 
-              <div class="collapseContent" id="saoPauloCollapse">
-                <p>
-                  <b>Recife:</b> Rua Dois de Julho, 80 - Bairro Santo Amaro
-                  - CEP: 50.040-180 Contato: +55 (81) 2122-2122 - CNPJ:
-                  01.159.435/0001-46
-                </p>
-                <p>
-                  <b>Caruaru:</b> Rod BR 104, KM 62, S/N - Bairro Nova
-                  Caruaru - CEP: 55.002-971 Contato: +55 81 3727-7650/5420 -
-                  CNPJ: 01.159.435/0005-70
-                </p>
-              </div>
-            </li>
-            <li>
-              <a
-                href="#"
-                aria-expanded="false"
-                type="button"
-                data-target="#rioDeJaneiroCollapse"
-                class="collapseTitle"
-              >
-                <span class="icon"></span>
-                <span>Rio de Janeiro</span>
-              </a>
+              <li>
+                <a
+                  href="#"
+                  aria-expanded="false"
+                  type="button"
+                  data-target="#<?= $titleLocalSlugify; ?>"
+                  class="collapseTitle"
+                >
+                  <span class="icon <?= $count === 1 ? 'active' : '' ?>"></span>
+                  <span> <?php the_sub_field('titulo_do_local'); ?> </span>
+                </a>
 
-              <div class="collapseContent" id="rioDeJaneiroCollapse">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Voluptatibus quidem aspernatur quisquam dolore
-                  perspiciatis praesentium consequuntur numquam laboriosam,
-                  ut minima aperiam delectus totam pariatur sint suscipit
-                  reiciendis voluptatum. Vel, quis.
-                </p>
-                <p>
-                  <b>Caruaru:</b> Rod BR 104, KM 62, S/N - Bairro Nova
-                  Caruaru - CEP: 55.002-971 Contato: +55 81 3727-7650/5420 -
-                  CNPJ: 01.159.435/0005-70
-                </p>
-              </div>
-            </li>
-            <li>
-              <a
-                href="#"
-                aria-expanded="false"
-                type="button"
-                data-target="#paraibaCollapse"
-                class="collapseTitle"
-              >
-                <span class="icon"></span>
-                <span>Paraíba</span>
-              </a>
+                <div 
+                  class="collapseContent <?= $count === 1 ? 'active' : '' ?>" 
+                  id="<?= $titleLocalSlugify; ?>"
+                >
+                  <?php the_sub_field('descricao_do_local'); ?>
+                </div>
+              </li>
 
-              <div class="collapseContent" id="paraibaCollapse">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Voluptatibus quidem aspernatur quisquam dolore
-                  perspiciatis praesentium consequuntur numquam laboriosam,
-                  ut minima aperiam delectus totam pariatur sint suscipit
-                  reiciendis voluptatum. Vel, quis.
-                </p>
-              </div>
-            </li>
-            <li>
-              <a
-                href="#"
-                aria-expanded="false"
-                type="button"
-                data-target="#sergipeCollapse"
-                class="collapseTitle"
-              >
-                <span class="icon"></span>
-                <span>Sergipe</span>
-              </a>
-
-              <div class="collapseContent" id="sergipeCollapse">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Voluptatibus quidem aspernatur quisquam dolore
-                  perspiciatis praesentium consequuntur numquam laboriosam,
-                  ut minima aperiam delectus totam pariatur sint suscipit
-                  reiciendis voluptatum. Vel, quis.
-                </p>
-              </div>
-            </li>
-            <li>
-              <a
-                href="#"
-                aria-expanded="false"
-                type="button"
-                data-target="#minasGeraisCollapse"
-                class="collapseTitle"
-              >
-                <span class="icon"></span>
-                <span>Minas Gerais</span>
-              </a>
-
-              <div class="collapseContent" id="minasGeraisCollapse">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Voluptatibus quidem aspernatur quisquam dolore
-                  perspiciatis praesentium consequuntur numquam laboriosam.
-                </p>
-              </div>
-            </li>
-          </ul>
+          <?php endwhile; ?> 
+            </ul>
+          <?php endif; ?>
         </div>
 
         <div class="map">
