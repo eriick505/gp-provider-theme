@@ -288,10 +288,15 @@ img {
   height: 100%;
   width: 100%;
   background-color: #1114;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   padding: 1.5rem;
+  z-index: 1;
+}
+
+.modal-container.active {
+  display: flex;
 }
 
 .modal-container .close {
@@ -733,50 +738,52 @@ main#app {
   }
 }
 
-.purpose .purposeList article {
+.purpose .purposeList article a {
   display: flex;
   align-items: center;
   text-align: center;
   flex-direction: column;
   justify-content: center;
+  text-decoration: none;
+  color: var(--dark-500);
 }
 
 @media (min-width: 769px) {
-  .purpose .purposeList article {
+  .purpose .purposeList article a {
     flex-direction: row;
     justify-content: flex-start;
   }
 }
 
-.purpose .purposeList article svg {
+.purpose .purposeList article a svg {
   margin-right: 0;
   margin-bottom: 1rem;
 }
 
 @media (min-width: 769px) {
-  .purpose .purposeList article svg {
+  .purpose .purposeList article a svg {
     margin-right: 2rem;
     margin-bottom: 0;
   }
 }
 
-.purpose .purposeList article span {
+.purpose .purposeList article a span {
   font-weight: 400;
   font-size: 2rem;
 }
 
 @media (min-width: 1025px) {
-  .purpose .purposeList article span {
+  .purpose .purposeList article a span {
     font-size: 2.4rem;
   }
 }
 
-.purpose .purposeList article:not(:last-child) {
+.purpose .purposeList article a:not(:last-child) {
   margin-bottom: 1rem;
 }
 
 @media (min-width: 1025px) {
-  .purpose .purposeList article:not(:last-child) {
+  .purpose .purposeList article a:not(:last-child) {
     margin-bottom: 0;
   }
 }

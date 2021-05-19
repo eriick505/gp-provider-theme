@@ -33,12 +33,14 @@
       grid-template-columns: 1fr 1fr 1fr auto;
     }
 
-    article {
+    article a {
       display: flex;
       align-items: center;
       text-align: center;
       flex-direction: column;
       justify-content: center;
+      text-decoration: none;
+      color: var(--dark-500);
 
       @media (min-width: 769px) {
         flex-direction: row;
