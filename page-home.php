@@ -506,36 +506,7 @@
         </div>
         <div class="form">
           <h3>ENTRE EM CONTATO</h3>
-          <form action="">
-            <div class="formGroup">
-              <label for="nome">Seu Nome</label>
-              <input
-                type="text"
-                name="nome"
-                id="nome"
-                placeholder="Seu Nome"
-              />
-            </div>
-            <div class="formGroup">
-              <label for="telefone">Seu Telefone</label>
-              <input
-                type="text"
-                name="telefone"
-                id="telefone"
-                placeholder="Seu Telefone"
-              />
-            </div>
-            <div class="formGroup">
-              <label for="mensagem">Sua Mensagem</label>
-              <input
-                type="text"
-                name="mensagem"
-                id="mensagem"
-                placeholder="Sua Mensagem"
-              />
-            </div>
-            <button type="submit">ENVIAR</button>
-          </form>
+          <?= do_shortcode('[contact-form-7 id="194" title="Formulário de contato - Home"]'); ?>
         </div>
       </div>
     </div>
