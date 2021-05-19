@@ -18,37 +18,7 @@
       </div>
       <div class="form">
         <h3>Cadastre seu currículo</h3>
-        <form action="">
-          <div class="formGroup">
-            <label for="nome">Seu Nome</label>
-            <input
-              type="text"
-              name="nome"
-              id="nome"
-              placeholder="Seu Nome"
-            />
-          </div>
-          <div class="formGroup">
-            <label for="telefone">Seu Telefone</label>
-            <input
-              type="text"
-              name="telefone"
-              id="telefone"
-              placeholder="Seu Telefone"
-            />
-          </div>
-          <div class="formGroup">
-            <label for="curriculo">Selecionar Currículo</label>
-            <input
-              type="text"
-              name="curriculo"
-              id="curriculo"
-              placeholder="Selecionar Currículo"
-            />
-            <span class="infoLabel">Arquivo com tamanho máximo de 2MB</span>
-          </div>
-          <button type="submit">ENVIAR</button>
-        </form>
+        <?= do_shortcode('[contact-form-7 id="195" title="Formulário de Contato - Trabalhe Conosco"]'); ?>
       </div>
     </div>
   </section>
