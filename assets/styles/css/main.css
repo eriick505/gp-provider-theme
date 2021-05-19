@@ -803,7 +803,7 @@ main#app {
 
 .services .whereWeOperate .listLocation {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   gap: 2.2rem;
   margin-top: 1.4rem;
 }
@@ -812,6 +812,7 @@ main#app {
   .services .whereWeOperate .listLocation {
     gap: 4.2rem;
     margin-top: 0;
+    justify-content: flex-end;
   }
 }
 
@@ -984,7 +985,7 @@ main#app {
 
 .contact .doubt .listContact {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-top: 3rem;
   font-weight: 300;
@@ -993,7 +994,6 @@ main#app {
 
 @media (min-width: 769px) {
   .contact .doubt .listContact {
-    justify-content: space-between;
     gap: 0;
   }
 }
