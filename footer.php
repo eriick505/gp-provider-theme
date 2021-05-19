@@ -1,3 +1,5 @@
+    <?php include('components/modal.html'); ?>
+    
     <footer class="footer">
       <section class="navFooter">
         <div class="container">
