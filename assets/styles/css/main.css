@@ -421,6 +421,37 @@ img {
   line-height: 2.6rem;
 }
 
+.modal-container .content.premios .certificacao {
+  position: absolute;
+  right: 60px;
+  top: 60px;
+}
+
+.modal-container .content.premios section:not(:last-child) {
+  margin-bottom: 4rem;
+}
+
+.modal-container .content.premios section h3 {
+  font-size: 2.4rem;
+  color: var(--dark-500);
+  margin-bottom: 1rem;
+}
+
+.modal-container .content.premios section p,
+.modal-container .content.premios section li {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.modal-container .content.premios section ul {
+  list-style: initial;
+  padding-left: 1.6rem;
+}
+
+.modal-container .content.premios section ul li:not(:last-child) {
+  margin-bottom: 0.2rem;
+}
+
 body {
   display: flex;
   flex-direction: column;
