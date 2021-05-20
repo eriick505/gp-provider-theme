@@ -354,12 +354,27 @@ img {
 }
 
 .modal-container .content header {
+  display: flex;
   margin-bottom: 1.6rem;
 }
 
 @media (min-width: 1025px) {
   .modal-container .content header {
     margin-bottom: 3.6rem;
+  }
+}
+
+.modal-container .content header img {
+  max-width: 50px;
+  margin-right: 0;
+  margin-bottom: 1rem;
+  align-self: center;
+}
+
+@media (min-width: 769px) {
+  .modal-container .content header img {
+    margin-right: 2rem;
+    margin-bottom: 0;
   }
 }
 
@@ -377,6 +392,33 @@ img {
 
 .modal-container .content p {
   font-size: 1.8rem;
+}
+
+.modal-container .content.valores ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (min-width: 769px) {
+  .modal-container .content.valores ul {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.modal-container .content.valores ul li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.7rem;
+  height: 20rem;
+}
+
+.modal-container .content.valores ul li span {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
 }
 
 body {
@@ -766,6 +808,19 @@ main#app {
 
 @media (min-width: 769px) {
   .purpose .purposeList article a svg {
+    margin-right: 2rem;
+    margin-bottom: 0;
+  }
+}
+
+.purpose .purposeList article a img {
+  max-width: 50px;
+  margin-right: 0;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 769px) {
+  .purpose .purposeList article a img {
     margin-right: 2rem;
     margin-bottom: 0;
   }
