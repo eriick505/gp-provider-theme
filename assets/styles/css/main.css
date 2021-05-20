@@ -323,6 +323,10 @@ img {
   }
 }
 
+.modal-container .close svg {
+  pointer-events: none;
+}
+
 @media (max-width: 520px) {
   .modal-container .close svg {
     max-width: 50%;

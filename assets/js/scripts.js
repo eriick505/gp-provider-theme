@@ -48,27 +48,42 @@ if (collapseListEl.length) {
 }
 
 function initModal() {
-  const botaoAbrir = document.querySelector('[data-openModal="premios"]');
-  const botaoFechar = document.querySelector('[data-modal="fechar"]');
-  const containerModal = document.querySelector('[data-modal="premios"]');
+  const buttonsOpenModal = document.querySelectorAll('[data-openModal]');
 
-  console.log(botaoAbrir);
+  buttonsOpenModal.forEach(button => {
+    const attrBtn = button.getAttribute('data-openModal');
 
-  if (botaoAbrir && botaoFechar && containerModal) {
-    function toggleModal(event) {
+    button.addEventListener('click', event => {
       event.preventDefault();
-      containerModal.classList.toggle('active');
-    }
-    function cliqueForaModal(event) {
-      if (event.target === this) {
-        toggleModal(event);
-      }
-    }
+      const modal = document.querySelector(`[data-modal=${attrBtn}]`);
 
-    botaoAbrir.addEventListener('click', toggleModal);
-    botaoFechar.addEventListener('click', toggleModal);
-    containerModal.addEventListener('click', cliqueForaModal);
-  }
+      function toggleModal() {
+        modal.classList.toggle('active');
+      }
+      toggleModal();
+
+      function closeModal(event) {
+        if (event.target === this) {
+          toggleModal();
+          this.removeEventListener('click', closeModal);
+
+          return;
+        }
+
+        const isElementEqualBtn = event.target.tagName === 'BUTTON' || null;
+        const containsCloseAttr = event.target.hasAttribute('data-close');
+
+        if (isElementEqualBtn && containsCloseAttr) {
+          toggleModal();
+          this.removeEventListener('click', closeModal);
+
+          return;
+        }
+      }
+
+      modal.addEventListener('click', closeModal);
+    });
+  });
 }
 
 initModal();

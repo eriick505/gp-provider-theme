@@ -38,6 +38,10 @@
       height: 70px;
     }
 
+    svg {
+      pointer-events: none;
+    }
+
     @media (max-width: 520px) {
       svg {
         max-width: 50%;

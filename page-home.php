@@ -95,7 +95,7 @@
 
       <div class="purposeList">
         <article>
-          <a href="#" data-openModal="premios">
+          <a href="#" data-openModal="missao">
             <svg
               width="50"
               height="50"
@@ -135,7 +135,7 @@
         </article>
 
         <article>
-          <a href="#" data-openModal="premios">
+          <a href="#" data-openModal="visao">
             <svg
               width="50"
               height="50"
@@ -177,7 +177,7 @@
         </article>
 
         <article>
-          <a href="#" data-openModal="premios">
+          <a href="#" data-openModal="valores">
             <svg
               width="50"
               height="50"
@@ -211,7 +211,7 @@
                 </clipPath>
               </defs>
             </svg>
-            <span>Valor</span>
+            <span>Valores</span>
           </a>
         </article>
 
