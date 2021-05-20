@@ -150,14 +150,21 @@ img {
 }
 
 .title.bgDetails::before {
-  content: "";
+  content: '';
   height: 172px;
-  left: -54px;
+  left: -24px;
   position: absolute;
-  top: -68px;
+  top: -58px;
   width: 197px;
   background: url(../../img/icons/detail-title.png);
   z-index: -1;
+}
+
+@media (min-width: 1025px) {
+  .title.bgDetails::before {
+    left: -54px;
+    top: -68px;
+  }
 }
 
 .collapseList li {
@@ -276,6 +283,203 @@ img {
 @media (min-width: 768px) {
   .headerPage h1 {
     font-size: 4.8rem;
+  }
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #1114;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  z-index: 1;
+}
+
+.modal-container.active {
+  display: flex;
+}
+
+.modal-container .close {
+  position: absolute;
+  right: -10px;
+  top: -15px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+  border: 6px solid var(--orange);
+  background-color: var(--white);
+}
+
+@media (min-width: 1025px) {
+  .modal-container .close {
+    right: -35px;
+    top: -35px;
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.modal-container .close svg {
+  pointer-events: none;
+}
+
+@media (max-width: 520px) {
+  .modal-container .close svg {
+    max-width: 50%;
+  }
+}
+
+.modal-container .close:hover {
+  background-color: var(--orange);
+}
+
+.modal-container .content {
+  background-color: var(--white);
+  max-width: 1099px;
+  width: 100%;
+  border-radius: 17px;
+  padding: 2.5rem 1.4rem;
+  box-shadow: var(--shadow-light);
+  position: relative;
+}
+
+@media (min-width: 1025px) {
+  .modal-container .content {
+    padding: 6.5rem;
+  }
+}
+
+.modal-container .content header {
+  display: flex;
+  margin-bottom: 1.6rem;
+  align-items: center;
+}
+
+@media (min-width: 1025px) {
+  .modal-container .content header {
+    margin-bottom: 3.6rem;
+  }
+}
+
+.modal-container .content header img {
+  max-width: 50px;
+  margin-right: 1rem;
+  align-self: center;
+}
+
+@media (min-width: 769px) {
+  .modal-container .content header img {
+    margin-right: 2rem;
+  }
+}
+
+.modal-container .content header h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--orange);
+}
+
+@media (min-width: 1025px) {
+  .modal-container .content header h2 {
+    font-size: 4.8rem;
+  }
+}
+
+.modal-container .content p {
+  font-size: 1.8rem;
+}
+
+.modal-container .content.valores ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (min-width: 769px) {
+  .modal-container .content.valores ul {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.modal-container .content.valores ul li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.7rem;
+  height: 20rem;
+}
+
+.modal-container .content.valores ul li span {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+}
+
+.modal-container .content.premios .certificacao {
+  text-align: center;
+}
+
+@media (min-width: 1025px) {
+  .modal-container .content.premios .certificacao {
+    position: absolute;
+    right: 60px;
+    top: 60px;
+  }
+}
+
+.modal-container .content.premios section:not(:last-child) {
+  margin-bottom: 4rem;
+}
+
+.modal-container .content.premios section h3 {
+  font-size: 2.4rem;
+  color: var(--dark-500);
+  margin-bottom: 1rem;
+}
+
+.modal-container .content.premios section p,
+.modal-container .content.premios section li {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+@media (min-width: 1025px) {
+  .modal-container .content.premios section p,
+  .modal-container .content.premios section li {
+    font-size: 1.8rem;
+  }
+}
+
+.modal-container .content.premios section ul {
+  list-style: initial;
+  padding-left: 1.6rem;
+}
+
+.modal-container .content.premios section ul li:not(:last-child) {
+  margin-bottom: 0.2rem;
+}
+
+@media (max-width: 1366px) {
+  .modal-container .content.valores,
+  .modal-container .content.premios {
+    height: 100%;
+  }
+  .modal-container .content.valores .wrapper,
+  .modal-container .content.premios .wrapper {
+    overflow-y: scroll;
+    height: 85%;
   }
 }
 
@@ -642,50 +846,67 @@ main#app {
   }
 }
 
-.purpose .purposeList article {
+.purpose .purposeList article a {
   display: flex;
   align-items: center;
   text-align: center;
   flex-direction: column;
   justify-content: center;
+  text-decoration: none;
+  color: var(--dark-500);
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 769px) {
-  .purpose .purposeList article {
+  .purpose .purposeList article a {
     flex-direction: row;
     justify-content: flex-start;
+    margin-bottom: 0;
   }
 }
 
-.purpose .purposeList article svg {
+.purpose .purposeList article a svg {
   margin-right: 0;
   margin-bottom: 1rem;
 }
 
 @media (min-width: 769px) {
-  .purpose .purposeList article svg {
+  .purpose .purposeList article a svg {
     margin-right: 2rem;
     margin-bottom: 0;
   }
 }
 
-.purpose .purposeList article span {
+.purpose .purposeList article a img {
+  max-width: 50px;
+  margin-right: 0;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 769px) {
+  .purpose .purposeList article a img {
+    margin-right: 2rem;
+    margin-bottom: 0;
+  }
+}
+
+.purpose .purposeList article a span {
   font-weight: 400;
   font-size: 2rem;
 }
 
 @media (min-width: 1025px) {
-  .purpose .purposeList article span {
+  .purpose .purposeList article a span {
     font-size: 2.4rem;
   }
 }
 
-.purpose .purposeList article:not(:last-child) {
+.purpose .purposeList article a:not(:last-child) {
   margin-bottom: 1rem;
 }
 
 @media (min-width: 1025px) {
-  .purpose .purposeList article:not(:last-child) {
+  .purpose .purposeList article a:not(:last-child) {
     margin-bottom: 0;
   }
 }

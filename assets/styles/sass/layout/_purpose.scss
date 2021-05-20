@@ -33,19 +33,34 @@
       grid-template-columns: 1fr 1fr 1fr auto;
     }
 
-    article {
+    article a {
       display: flex;
       align-items: center;
       text-align: center;
       flex-direction: column;
       justify-content: center;
+      text-decoration: none;
+      color: var(--dark-500);
+      margin-bottom: 1rem;
 
       @media (min-width: 769px) {
         flex-direction: row;
         justify-content: flex-start;
+        margin-bottom: 0;
       }
 
       svg {
+        margin-right: 0;
+        margin-bottom: 1rem;
+
+        @media (min-width: 769px) {
+          margin-right: 2rem;
+          margin-bottom: 0;
+        }
+      }
+
+      img {
+        max-width: 50px;
         margin-right: 0;
         margin-bottom: 1rem;
 
