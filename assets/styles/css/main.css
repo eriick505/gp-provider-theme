@@ -150,14 +150,21 @@ img {
 }
 
 .title.bgDetails::before {
-  content: "";
+  content: '';
   height: 172px;
-  left: -54px;
+  left: -24px;
   position: absolute;
-  top: -68px;
+  top: -58px;
   width: 197px;
   background: url(../../img/icons/detail-title.png);
   z-index: -1;
+}
+
+@media (min-width: 1025px) {
+  .title.bgDetails::before {
+    left: -54px;
+    top: -68px;
+  }
 }
 
 .collapseList li {
@@ -356,6 +363,7 @@ img {
 .modal-container .content header {
   display: flex;
   margin-bottom: 1.6rem;
+  align-items: center;
 }
 
 @media (min-width: 1025px) {
@@ -366,15 +374,13 @@ img {
 
 .modal-container .content header img {
   max-width: 50px;
-  margin-right: 0;
-  margin-bottom: 1rem;
+  margin-right: 1rem;
   align-self: center;
 }
 
 @media (min-width: 769px) {
   .modal-container .content header img {
     margin-right: 2rem;
-    margin-bottom: 0;
   }
 }
 
@@ -422,9 +428,15 @@ img {
 }
 
 .modal-container .content.premios .certificacao {
-  position: absolute;
-  right: 60px;
-  top: 60px;
+  text-align: center;
+}
+
+@media (min-width: 1025px) {
+  .modal-container .content.premios .certificacao {
+    position: absolute;
+    right: 60px;
+    top: 60px;
+  }
 }
 
 .modal-container .content.premios section:not(:last-child) {
@@ -439,8 +451,15 @@ img {
 
 .modal-container .content.premios section p,
 .modal-container .content.premios section li {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 400;
+}
+
+@media (min-width: 1025px) {
+  .modal-container .content.premios section p,
+  .modal-container .content.premios section li {
+    font-size: 1.8rem;
+  }
 }
 
 .modal-container .content.premios section ul {
@@ -450,6 +469,18 @@ img {
 
 .modal-container .content.premios section ul li:not(:last-child) {
   margin-bottom: 0.2rem;
+}
+
+@media (max-width: 1366px) {
+  .modal-container .content.valores,
+  .modal-container .content.premios {
+    height: 100%;
+  }
+  .modal-container .content.valores .wrapper,
+  .modal-container .content.premios .wrapper {
+    overflow-y: scroll;
+    height: 85%;
+  }
 }
 
 body {
@@ -823,12 +854,14 @@ main#app {
   justify-content: center;
   text-decoration: none;
   color: var(--dark-500);
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 769px) {
   .purpose .purposeList article a {
     flex-direction: row;
     justify-content: flex-start;
+    margin-bottom: 0;
   }
 }
 

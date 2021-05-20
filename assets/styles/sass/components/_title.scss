@@ -15,14 +15,19 @@
     position: relative;
 
     &::before {
-      content: "";
+      content: '';
       height: 172px;
-      left: -54px;
+      left: -24px;
       position: absolute;
-      top: -68px;
+      top: -58px;
       width: 197px;
       background: url(../../img/icons/detail-title.png);
       z-index: -1;
+
+      @media (min-width: 1025px) {
+        left: -54px;
+        top: -68px;
+      }
     }
   }
 }

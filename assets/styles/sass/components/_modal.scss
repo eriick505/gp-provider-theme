@@ -69,6 +69,7 @@
     header {
       display: flex;
       margin-bottom: 1.6rem;
+      align-items: center;
 
       @media (min-width: 1025px) {
         margin-bottom: 3.6rem;
@@ -76,13 +77,11 @@
 
       img {
         max-width: 50px;
-        margin-right: 0;
-        margin-bottom: 1rem;
+        margin-right: 1rem;
         align-self: center;
 
         @media (min-width: 769px) {
           margin-right: 2rem;
-          margin-bottom: 0;
         }
       }
 
@@ -129,9 +128,13 @@
 
   .content.premios {
     .certificacao {
-      position: absolute;
-      right: 60px;
-      top: 60px;
+      text-align: center;
+
+      @media (min-width: 1025px) {
+        position: absolute;
+        right: 60px;
+        top: 60px;
+      }
     }
 
     section {
@@ -147,8 +150,12 @@
 
       p,
       li {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         font-weight: 400;
+
+        @media (min-width: 1025px) {
+          font-size: 1.8rem;
+        }
       }
 
       ul {
@@ -158,6 +165,18 @@
         li:not(:last-child) {
           margin-bottom: 0.2rem;
         }
+      }
+    }
+  }
+
+  .content.valores,
+  .content.premios {
+    @media (max-width: 1366px) {
+      height: 100%;
+
+      .wrapper {
+        overflow-y: scroll;
+        height: 85%;
       }
     }
   }

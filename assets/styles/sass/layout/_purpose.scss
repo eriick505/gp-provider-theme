@@ -41,10 +41,12 @@
       justify-content: center;
       text-decoration: none;
       color: var(--dark-500);
+      margin-bottom: 1rem;
 
       @media (min-width: 769px) {
         flex-direction: row;
         justify-content: flex-start;
+        margin-bottom: 0;
       }
 
       svg {
