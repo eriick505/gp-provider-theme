@@ -14,7 +14,7 @@
         <div class="container">
           <ul class="socialIcons">
             <li>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/grupo_provider/" target="_blank" rel="noopener noreferrer">
                 <span aria-label="Instagram" role="img">
                   <svg
                     width="20"
@@ -37,7 +37,7 @@
               </a>
             </li>
             <li>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/company/provider-solu-es-tecnol-gicas-ltda-/" target="_blank" rel="noopener noreferrer">
                 <span aria-label="Linkedin" role="img">
                   <svg
                     width="18"
@@ -54,7 +54,7 @@
               </a>
             </li>
             <li>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/GrupoProvider" target="_blank" rel="noopener noreferrer">
                 <span aria-label="Facebook" role="img">
                   <svg
                     width="21"
