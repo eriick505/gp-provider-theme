@@ -19,10 +19,6 @@
 
   .close {
     position: absolute;
-    right: -10px;
-    top: -15px;
-    width: 40px;
-    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,21 +27,13 @@
     border: 6px solid var(--orange);
     background-color: var(--white);
 
-    @media (min-width: 1025px) {
-      right: -35px;
-      top: -35px;
-      width: 70px;
-      height: 70px;
-    }
+    right: -35px;
+    top: -35px;
+    width: 70px;
+    height: 70px;
 
     svg {
       pointer-events: none;
-    }
-
-    @media (max-width: 520px) {
-      svg {
-        max-width: 50%;
-      }
     }
 
     &:hover {
@@ -169,14 +157,25 @@
     }
   }
 
-  .content.valores,
-  .content.premios {
-    @media (max-width: 1366px) {
+  @media (max-height: 768px) {
+    .content.valores,
+    .content.premios {
       height: 100%;
 
       .wrapper {
         overflow-y: scroll;
         height: 85%;
+      }
+    }
+
+    .close {
+      right: -10px;
+      top: -15px;
+      width: 40px;
+      height: 40px;
+
+      svg {
+        max-width: 50%;
       }
     }
   }

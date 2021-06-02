@@ -308,10 +308,6 @@ img {
 
 .modal-container .close {
   position: absolute;
-  right: -10px;
-  top: -15px;
-  width: 40px;
-  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -319,25 +315,14 @@ img {
   border-radius: 50%;
   border: 6px solid var(--orange);
   background-color: var(--white);
-}
-
-@media (min-width: 1025px) {
-  .modal-container .close {
-    right: -35px;
-    top: -35px;
-    width: 70px;
-    height: 70px;
-  }
+  right: -35px;
+  top: -35px;
+  width: 70px;
+  height: 70px;
 }
 
 .modal-container .close svg {
   pointer-events: none;
-}
-
-@media (max-width: 520px) {
-  .modal-container .close svg {
-    max-width: 50%;
-  }
 }
 
 .modal-container .close:hover {
@@ -471,7 +456,7 @@ img {
   margin-bottom: 0.2rem;
 }
 
-@media (max-width: 1366px) {
+@media (max-height: 768px) {
   .modal-container .content.valores,
   .modal-container .content.premios {
     height: 100%;
@@ -480,6 +465,15 @@ img {
   .modal-container .content.premios .wrapper {
     overflow-y: scroll;
     height: 85%;
+  }
+  .modal-container .close {
+    right: -10px;
+    top: -15px;
+    width: 40px;
+    height: 40px;
+  }
+  .modal-container .close svg {
+    max-width: 50%;
   }
 }
 
