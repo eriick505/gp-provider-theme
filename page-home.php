@@ -104,15 +104,15 @@
           </a>
         </article>
 
-        <article>
+        <!-- <article>
           <a href="#" data-openModal="visao">
             <img
-              src="<?php bloginfo('template_url'); ?>/assets/img/icons/icon-visao-title.png"
+              src="<?php // bloginfo('template_url'); ?>/assets/img/icons/icon-visao-title.png"
               alt="icone de visão"
             />
             <span>Visão</span>
           </a>
-        </article>
+        </article> -->
 
         <article>
           <a href="#" data-openModal="valores">

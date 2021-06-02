@@ -691,7 +691,7 @@ main#app {
 .hero {
   align-items: center;
   background-color: var(--blue-700);
-  background-position: -155px;
+  background-position: -295px;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -836,7 +836,7 @@ main#app {
 @media (min-width: 769px) {
   .purpose .purposeList {
     margin-top: 5rem;
-    grid-template-columns: 1fr 1fr 1fr auto;
+    grid-template-columns: 255px 255px auto;
   }
 }
 
