@@ -12,7 +12,7 @@
     margin: 6rem 0;
 
     @media (min-width: 768px) {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
 
     .box {
@@ -23,7 +23,7 @@
       padding: 1.8rem;
       display: flex;
       flex-direction: column;
-      height: 30rem;
+      height: 43.7rem;
       justify-content: flex-end;
       transition: var(--transition2s);
 
@@ -66,13 +66,17 @@
         display: flex;
         font-weight: 700;
         justify-content: space-between;
-        margin-top: 0.4rem;
-        max-width: 160px;
+        margin-top: 1.4rem;
+        max-width: 138px;
         transition: var(--transition2s);
 
         &:hover {
-          max-width: 138px;
+          max-width: 160px;
           color: var(--blue-400);
+        }
+
+        svg {
+          transform: scale(1.4);
         }
       }
     }

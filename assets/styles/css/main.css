@@ -924,7 +924,7 @@ main#app {
 
 @media (min-width: 768px) {
   .services .listServices {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -936,7 +936,7 @@ main#app {
   padding: 1.8rem;
   display: flex;
   flex-direction: column;
-  height: 30rem;
+  height: 43.7rem;
   justify-content: flex-end;
   transition: var(--transition2s);
 }
@@ -982,14 +982,18 @@ main#app {
   display: flex;
   font-weight: 700;
   justify-content: space-between;
-  margin-top: 0.4rem;
-  max-width: 160px;
+  margin-top: 1.4rem;
+  max-width: 138px;
   transition: var(--transition2s);
 }
 
 .services .listServices .box .btnServices:hover {
-  max-width: 138px;
+  max-width: 160px;
   color: var(--blue-400);
+}
+
+.services .listServices .box .btnServices svg {
+  transform: scale(1.4);
 }
 
 .services .whereWeOperate {
