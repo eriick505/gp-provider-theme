@@ -25,7 +25,7 @@
                   >
                 </li>
                 <li>
-                  <a href="#"
+                  <a href="<?php echo get_site_url(); ?>/#nossoProposito"
                     >Prêmios e Certificações</a
                   >
                 </li>
@@ -70,13 +70,6 @@
                     href="<?php echo get_site_url(); ?>/nossas-solucoes#contact-center"
                   >
                     Contact Center
-                  </a>
-                </li>
-                <li>
-                  <a 
-                    href="<?php echo get_site_url(); ?>/nossas-solucoes#tic"
-                  >
-                    TIC
                   </a>
                 </li>
               </ul>

@@ -19,9 +19,5 @@
   .map {
     margin-top: 0;
     text-align: center;
-
-    @media (min-width: 1025px) {
-      margin-top: -3rem;
-    }
   }
 }

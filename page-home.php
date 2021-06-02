@@ -82,7 +82,7 @@
     </div>
   </section>
 
-  <section class="purpose">
+  <section class="purpose" id="nossoProposito">
     <div class="container">
       <header class="title">
         <span>Conheça o nosso</span>
@@ -302,7 +302,7 @@
     </div>
   </section>
 
-  <section class="clients">
+  <!-- <section class="clients">
     <div class="container">
       <header class="title bgDetails">
         <span>Conosco nesta</span>
@@ -312,29 +312,29 @@
 
     <div class="containerExpanded">
       <?php 
-        $images = get_field('lista_de_clientes');
+        // $images = get_field('lista_de_clientes');
 
-        if( $images ): 
+        // if( $images ): 
       ?>
           <ul class="content">
-            <?php foreach( $images as $image ): ?>
+            <?php // foreach( $images as $image ): ?>
               <li>
                 <img 
-                  src="<?php echo esc_url($image['sizes']['large']); ?>" 
-                  alt="<?php echo esc_attr($image['alt']); ?>" 
+                  src="<?php // echo esc_url($image['sizes']['large']); ?>" 
+                  alt="<?php // echo esc_attr($image['alt']); ?>" 
                 />
               </li>
-            <?php endforeach; ?>
+            <?php // endforeach; ?>
           </ul>
-      <?php endif; ?>
+      <?php // endif; ?>
     </div>
 
     <div class="container">
       <footer>
-        <a href="<?php echo get_site_url(); ?>/clientes" class="btn btnOrangeGradient">Ver mais </a>
+        <a href="<?php // echo get_site_url(); ?>/clientes" class="btn btnOrangeGradient">Ver mais </a>
       </footer>
     </div>
-  </section>
+  </section> -->
 
   <section class="contact">
     <div class="container">
