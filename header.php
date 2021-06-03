@@ -5,6 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <meta name="author" content="E.S Design">
+    <meta name="title" content="Grupo Provider | Propocionando uma nova experiência de negócios aos seus clientes" />
+    <meta name="description" content="Propocionando uma nova experiência de negócios aos seus clientes"/>
+    <meta name="reply-to" content="https://www.grupoprovider.com.br/">
+    <meta name="copyright" content="https://www.grupoprovider.com.br/" />
+    <meta name="creator" content="Agência Tuba"/>
+    <meta name="resource-type" content="document" />  
+    <meta name="robots" content="index, follow" />
+    <meta name="rating" content="General" />
+
+    <!-- OG TAGS -->
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:image" content="https://www.grupoprovider.com.br/wp-content/themes/gp-provider-theme/assets/img/logo.png">
+    <meta property="og:type" content="website">    
+    <meta property="og:url" content="https://www.grupoprovider.com.br/">
+    <meta property="og:site_name" content="Grupo Provider | Propocionando uma nova experiência de negócios aos seus clientes">
+    <meta property="og:description" content="Há 25 anos sendo uma solução próxima, proativa e Provider para a sua empresa.">
+    <meta property="og:image" content="https://www.grupoprovider.com.br/wp-content/themes/gp-provider-theme/assets/img/logo.png">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="<?php bloginfo('template_url'); ?>/assets/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="<?php bloginfo('template_url'); ?>/assets/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="<?php bloginfo('template_url'); ?>/assets/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="<?php bloginfo('template_url'); ?>/assets/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="<?php bloginfo('template_url'); ?>/assets/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="<?php bloginfo('template_url'); ?>/assets/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="<?php bloginfo('template_url'); ?>/assets/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="<?php bloginfo('template_url'); ?>/assets/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('template_url'); ?>/assets/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="<?php bloginfo('template_url'); ?>/assets/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php bloginfo('template_url'); ?>/assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="<?php bloginfo('template_url'); ?>/assets/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php bloginfo('template_url'); ?>/assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="<?php bloginfo('template_url'); ?>/assets/img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ea7613">
+    <meta name="msapplication-TileImage" content="<?php bloginfo('template_url'); ?>/assets/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ea7613">
+
     <!-- ADD HEADER WP -->
     <?php wp_head(); ?>
   </head>
