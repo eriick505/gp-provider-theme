@@ -67,7 +67,7 @@
                 </li>
                 <li>
                   <a 
-                    href="<?php echo get_site_url(); ?>/nossas-solucoes#contact-center"
+                    href="<?php echo get_site_url(); ?>/nossas-solucoes#call-center-contact-center-teletrabalho"
                   >
                     Contact Center
                   </a>
