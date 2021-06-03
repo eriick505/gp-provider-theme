@@ -33,7 +33,7 @@
         }
 
         &::after {
-          content: "";
+          content: '';
           position: absolute;
           right: 0;
           top: 10%;
@@ -70,7 +70,7 @@
 
     @media (min-width: 1025px) {
       &::before {
-        content: "";
+        content: '';
         position: absolute;
         left: 0;
         top: 10%;
@@ -126,28 +126,29 @@
     background-color: var(--orange);
     align-items: center;
     color: var(--white);
-    padding: 4rem 0;
+    padding: 12rem 0;
     background-size: cover;
     background-position: center;
 
     @media (min-width: 1025px) {
       height: 72rem;
+      padding: 4rem 0;
     }
   }
 
   .localization {
-    background-image: url("../../img/backgrounds/bg-localizacao.jpg");
+    background-image: url('../../img/backgrounds/bg-localizacao.jpg');
   }
 
   .people {
-    background-image: url("../../img/backgrounds/bg-pessoas.jpg");
+    background-image: url('../../img/backgrounds/bg-pessoas.jpg');
   }
 
   .integration {
-    background-image: url("../../img/backgrounds/bg-integracao.jpg");
+    background-image: url('../../img/backgrounds/bg-integracao.jpg');
   }
 
   .niches {
-    background-image: url("../../img/backgrounds/bg-nichos.jpg");
+    background-image: url('../../img/backgrounds/bg-nichos.jpg');
   }
 }

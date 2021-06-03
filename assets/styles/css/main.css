@@ -1359,7 +1359,7 @@ main#app {
     display: none;
   }
   .pageInstitutional .row.reverse .content::after {
-    content: "";
+    content: '';
     position: absolute;
     right: 0;
     top: 10%;
@@ -1399,7 +1399,7 @@ main#app {
 
 @media (min-width: 1025px) {
   .pageInstitutional .content::before {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     top: 10%;
@@ -1460,7 +1460,7 @@ main#app {
   background-color: var(--orange);
   align-items: center;
   color: var(--white);
-  padding: 4rem 0;
+  padding: 12rem 0;
   background-size: cover;
   background-position: center;
 }
@@ -1468,6 +1468,7 @@ main#app {
 @media (min-width: 1025px) {
   .pageInstitutional .sectionPage {
     height: 72rem;
+    padding: 4rem 0;
   }
 }
 
@@ -1782,6 +1783,40 @@ main#app {
   .pageFrequentlyAskedQuestions .content .collapseList li .collapseContent p {
     font-size: 1.6rem;
   }
+}
+
+.pageTerms .content {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.pageTerms h2 {
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  color: var(--orange);
+}
+
+@media (min-width: 1025px) {
+  .pageTerms h2 {
+    font-size: 3.6rem;
+  }
+}
+
+.pageTerms p {
+  line-height: 2.6rem;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.pageTerms ul {
+  list-style: initial;
+  padding-left: 1.6rem;
+  font-weight: 300;
+  line-height: 2.6rem;
+}
+
+.pageTerms ul li {
+  margin-bottom: 1.6rem;
 }
 
 .footer .navFooter {
