@@ -1,0 +1,33 @@
+.pageTerms {
+  .content {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  h2 {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    color: var(--orange);
+
+    @media (min-width: 1025px) {
+      font-size: 3.6rem;
+    }
+  }
+
+  p {
+    line-height: 2.6rem;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+  }
+
+  ul {
+    list-style: initial;
+    padding-left: 1.6rem;
+    font-weight: 300;
+    line-height: 2.6rem;
+
+    li {
+      margin-bottom: 1.6rem;
+    }
+  }
+}
