@@ -477,6 +477,47 @@ img {
   }
 }
 
+.box-cookies {
+  position: fixed;
+  background: var(--white);
+  width: 100%;
+  z-index: 998;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: -3px 0 7px 1px rgba(3, 3, 3, 0.14);
+  padding: 18px 4px;
+}
+
+.box-cookies.hide {
+  display: none !important;
+}
+
+@media (min-width: 769px) {
+  .box-cookies {
+    flex-direction: row;
+  }
+}
+
+.box-cookies p {
+  margin-bottom: 0;
+}
+
+.box-cookies .msg-cookies,
+.box-cookies .btn-cookies {
+  text-align: center;
+  padding: 8px 28px;
+  font-size: 16px;
+}
+
+.box-cookies .btn-cookies {
+  background: var(--orange);
+  cursor: pointer;
+  color: var(--white);
+}
+
 body {
   display: flex;
   flex-direction: column;
