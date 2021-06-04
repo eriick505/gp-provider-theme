@@ -20,11 +20,6 @@
                   >
                 </li>
                 <li>
-                  <a href="#"
-                    >Nossos Conceitos</a
-                  >
-                </li>
-                <li>
                   <a href="<?php echo get_site_url(); ?>/#nossoProposito"
                     >Prêmios e Certificações</a
                   >
@@ -34,24 +29,9 @@
                     >Onde estamos</a
                   >
                 </li>
-              </ul>
-            </div>
-
-            <div class="no-title">
-              <ul>
                 <li>
                   <a href="<?php echo get_site_url(); ?>/#setorAtuacao"
                     >Setor de Atuação</a
-                  >
-                </li>
-                <li>
-                  <a href="#" target="_blank" rel="noopener noreferrer"
-                    >Ouvidoria</a
-                  >
-                </li>
-                <li>
-                  <a href="#" target="_blank" rel="noopener noreferrer"
-                    >Portal de Colaborador</a
                   >
                 </li>
               </ul>
@@ -77,28 +57,61 @@
 
             <div>
               <h5>FERRAMENTAS</h5>
-              <ul>
-                <li>
-                  <a href="#" target="_blank" rel="noopener noreferrer"
-                    >Ferramenta 1</a
-                  >
-                </li>
-                <li>
-                  <a href="#" target="_blank" rel="noopener noreferrer"
-                    >Ferramenta 2</a
-                  >
-                </li>
-                <li>
-                  <a href="#" target="_blank" rel="noopener noreferrer"
-                    >Ferramenta 3</a
-                  >
-                </li>
-                <li>
-                  <a href="#" target="_blank" rel="noopener noreferrer"
-                    >Ferramenta 4</a
-                  >
-                </li>
-              </ul>
+              <div class="toolsList">
+                <ul>
+                  <li>
+                    <a href="http://bpm.grupoprovider.com.br" target="_blank" rel="noopener noreferrer"
+                      >BPM</a
+                    >
+                  </li>
+                  <li>
+                    <a href="http://csc.grupoprovider.com.br/otrs/customer.pl" target="_blank" rel="noopener noreferrer"
+                      >CSC</a
+                    >
+                  </li>
+                  <li>
+                    <a href="http://csc2.grupoprovider.com.br/otrs/customer.pl" target="_blank" rel="noopener noreferrer"
+                      >CSC - SP</a
+                    >
+                  </li>
+                </ul>
+
+                <ul>
+                  <li>
+                    <a href="http://ead.grupoprovider.com.br" target="_blank" rel="noopener noreferrer"
+                      >EAD</a
+                    >
+                  </li>
+                  <li>
+                    <a href="http://ged.grupoprovider.com.br" target="_blank" rel="noopener noreferrer"
+                      >GED</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://webmail.grupoprovider.com.br" target="_blank" rel="noopener noreferrer"
+                      >Webmail</a
+                    >
+                  </li>
+                </ul>
+
+                <ul>
+                  <li>
+                    <a href="http://portal.grupoprovider.com.br/Corpore.Net/Login.aspx" target="_blank" rel="noopener noreferrer"
+                      >Portal do Colaborador</a
+                    >
+                  </li>
+                  <li>
+                    <a href="http://zabbix.grupoprovider.com.br" target="_blank" rel="noopener noreferrer"
+                      >Monitoração da Infra</a
+                    >
+                  </li>
+                  <li>
+                    <a href="http://chatrecife.grupoprovider.com.br" target="_blank" rel="noopener noreferrer"
+                      >Chat Suporte</a 
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

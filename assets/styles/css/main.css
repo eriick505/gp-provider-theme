@@ -1905,7 +1905,7 @@ main#app {
 
 @media (min-width: 1025px) {
   .footer .navFooter .menusFooter {
-    grid-template-columns: 21rem 21rem 1fr 1fr;
+    grid-template-columns: 21rem 15rem 1fr;
     text-align: initial;
   }
 }
@@ -1936,6 +1936,23 @@ main#app {
 @media (min-width: 1025px) {
   .footer .navFooter .menusFooter .no-title {
     margin-top: 3.5rem;
+  }
+}
+
+.footer .navFooter .menusFooter .toolsList {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 1025px) {
+  .footer .navFooter .menusFooter .toolsList {
+    grid-template-columns: 11rem 11rem 16rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer .navFooter .menusFooter .toolsList ul {
+    margin-bottom: 1rem;
   }
 }
 
