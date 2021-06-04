@@ -39,23 +39,12 @@
           ?>
         
             <li>
-              <a
-                href="#"
-                aria-expanded="false"
-                type="button"
+              <span
                 data-target="#<?= $titleTopicSlugify; ?>"
                 class="collapseTitle"
               >
-                <span class="icon <?= $count === 1 ? 'active' : '' ?>"></span>
                 <span><?php the_sub_field('titulo_do_topico'); ?></span>
-              </a>
-    
-              <div 
-                class="collapseContent <?= $count === 1 ? 'active' : '' ?>" 
-                id="<?= $titleTopicSlugify; ?>"
-              >
-                <?php the_sub_field('descricao_do_topico'); ?>
-              </div>
+              </span>
             </li>
         
           <?php endwhile; ?>
